@@ -1,0 +1,769 @@
+body {
+  background-color: #dadada;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer {
+  color: #ffffff;
+  justify-content: center;
+}
+
+th {
+  padding: 3px 6px;
+  background-color: #cfcfcf;
+  color: #1b1b1b;
+}
+
+td {
+  padding: 2px 6px;
+}
+
+tr {
+  background-color: #ffffff;
+}
+
+.youtube tr:hover {
+  opacity: 100%;
+}
+
+button {
+  background-color: #7a0019;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 80%;
+}
+
+.league-table-title-fill {
+  background-color: #7a0019;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.ethan-table-title-fill {
+  background-color: #4b2e83;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.jacob-table-title-fill {
+  background-color: #fb4f14;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.brian-table-title-fill {
+  background-color: #bf5700;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.caleb-table-title-fill {
+  background-color: #24ab3d;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.cameron-table-title-fill {
+  background-color: #03202f;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.dan-table-title-fill {
+  background-color: #20062a;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.jorden-table-title-fill {
+  background-color: #17256d;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.juice-table-title-fill {
+  background-color: #046307;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.lucas-table-title-fill {
+  background-color: #008542;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.morgan-table-title-fill {
+  background-color: #2f8acc;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.scott-table-title-fill {
+  background-color: #01a263;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+.shawn-table-title-fill {
+  background-color: #3c3b6e;
+  color: #ffffff;
+  padding: 5px 25px;
+  border: 1px solid #cccccc;
+  border-bottom-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.container {
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 2.5% 0;
+  text-align: center;
+}
+
+.footer-pad {
+  padding: 10px 0;
+}
+
+.section-title {
+  padding-top: 2.5%;
+}
+
+.main-section-title {
+  padding: 2.5% 0;
+  justify-content: center;
+}
+
+.home-title {
+  text-align: left;
+}
+
+.inline-data {
+  display: inline;
+}
+
+.table-title {
+  text-align: left;
+  padding: 0 0 6px 0;
+  margin: 0;
+}
+
+.table {
+  margin-bottom: 0;
+  width: auto;
+}
+
+.quick-view {
+  padding-top: 25px;
+}
+
+.standard-stats th,
+.standard-stats td {
+  border: 1px solid #cccccc;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.trade-stats th,
+.trade-stats td {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: none;
+}
+
+.bets-table th,
+.bets-table td {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.outer-border {
+  border: 1px solid #cccccc;
+}
+
+.bet-head {
+  font-size: 1.15rem;
+}
+
+.bet-date {
+  font-size: 0.85rem;
+}
+
+.bet-date td {
+  padding-bottom: 15px;
+}
+
+.bet-sides {
+  border: 1px solid #cccccc;
+}
+
+.no-bottom-cell-border {
+  border-bottom: 0px solid;
+}
+
+.quick-stats {
+  width: 100%;
+}
+
+.roster th,
+.roster td {
+  border: 1px solid none #cccccc;
+  padding: 2px;
+}
+
+.roster td {
+  height: 50px;
+}
+
+.draft-table {
+  font-size: 0.85rem;
+}
+
+.roster {
+  width: 100%;
+}
+
+.left-data {
+  text-align: left;
+}
+
+.center-data {
+  text-align: center;
+}
+
+.right-data {
+  text-align: right;
+}
+
+.career-stats {
+  background-color: #cfcfcf;
+}
+
+.average-stats {
+  background-color: #f5f5f5;
+}
+
+.box-border {
+  border: 1px solid #cccccc;
+  padding: 0;
+  margin: 2.5% 0;
+}
+
+.nfl-logo {
+  max-height: 25px;
+  width: auto;
+  max-width: 30px;
+}
+
+.nav-team-logo {
+  max-height: 80px;
+  width: auto;
+  max-width: 150px;
+}
+
+.nfl-logo-pad {
+  padding: 0px;
+}
+
+/* Header */
+
+.nav-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.bg-black {
+  background-color: #1d1d1d;
+}
+
+.top-banner {
+  width: 100%;
+  height: auto;
+}
+
+.champ-banner {
+  width: 75%;
+  height: auto;
+}
+
+.e-conference-header {
+  background-color: #ffcc33;
+  color: black;
+}
+
+.w-conference-header {
+  background-color: #7a0019;
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* Team Page */
+
+.banner {
+  width: 100%;
+  height: auto;
+}
+
+.team-logo {
+  width: 300px;
+  height: auto;
+}
+
+.owners-logo {
+  max-width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+.owners-logo:hover {
+  opacity: 80%;
+}
+
+.store-card:hover {
+  opacity: 80%;
+}
+
+.bottom-logo {
+  width: 60px;
+  height: auto;
+}
+
+.conference-logo {
+  height: 100px;
+  width: auto;
+}
+
+.center-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5% 1%;
+}
+
+.ethan-team-header {
+  background-color: #4b2e83;
+  color: #ffffff;
+}
+
+.cameron-team-header {
+  background-color: #03202f;
+  color: #ffffff;
+}
+
+.jacob-team-header {
+  background-color: #fb4f14;
+  color: #ffffff;
+}
+
+.brian-team-header {
+  background-color: #bf5700;
+  color: #ffffff;
+}
+
+.caleb-team-header {
+  background-color: #24ab3d;
+  color: #ffffff;
+}
+
+.dan-team-header {
+  background-color: #20062a;
+  color: #ffffff;
+}
+
+.juice-team-header {
+  background-color: #046307;
+  color: #ffffff;
+}
+
+.jorden-team-header {
+  background-color: #17256d;
+  color: #ffffff;
+}
+
+.lucas-team-header {
+  background-color: #008542;
+  color: #ffffff;
+}
+
+.morgan-team-header {
+  background-color: #2f8acc;
+  color: #ffffff;
+}
+
+.scott-team-header {
+  background-color: #01a263;
+  color: #ffffff;
+}
+
+.shawn-team-header {
+  background-color: #3c3b6e;
+  color: #ffffff;
+}
+
+.left-align {
+  text-align: left;
+  padding: 2.5% 1%;
+}
+
+.left-align-no-pad {
+  text-align: left;
+  padding: 2.5% 0 0 0;
+}
+
+/* Logos */
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+  margin: 1%;
+}
+/* Footer */
+
+.underline {
+  text-decoration: underline;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+.team-name {
+  font-weight: 700;
+}
+
+.top-bottom-padding {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.double-top-bottom-padding {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.no-padding {
+  padding: 0;
+  padding-left: 5px;
+}
+
+.no-padding-award {
+  padding: 0;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0;
+}
+
+.overflow {
+  overflow: hidden;
+  text-align: center;
+}
+
+.store-card {
+  width: 95%;
+  height: auto;
+}
+
+.padding-sides {
+  padding: 2.5% 1%;
+}
+
+.padding-bottom {
+  padding-bottom: 20px;
+}
+
+.bottom-border {
+  border-bottom: #dddddd;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog-caption {
+  background-color: #eeeeee;
+  padding: 2.5% 5%;
+  text-align: left;
+  color: black;
+}
+
+.headlines {
+  color: black;
+}
+
+.no-underline:hover {
+  text-decoration-line: none;
+}
+
+.news {
+  background-color: #eeeeee;
+  height: auto;
+  padding: 2.5% 5%;
+}
+
+.news-text {
+  padding-top: 5px;
+}
+
+.news-parent {
+  width: 75%;
+  /* border: 1px solid #cccccc; */
+  background-color: #eeeeee;
+}
+
+.news-pic {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.news-margin {
+  margin: 50px 0;
+}
+
+.nav-active {
+  background-color: #7a0019;
+  color: white;
+}
+
+.nav-active:hover {
+  background-color: #7a0019;
+  color: white;
+}
+
+.nav-bigtext {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .nav-bigtext {
+    font-size: 2rem;
+  }
+}
+
+.youtube {
+  width: 100%;
+  height: auto;
+}
+
+.dollar-bet {
+  border-right: 1px solid #cccccc;
+}
+
+.questions-table {
+  border-top: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.date-table {
+  border-right: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+}
+
+.bible-doc {
+  width: 85%;
+  height: 1200px;
+}
+
+.external-icon {
+  padding-left: 5px;
+}
+
+.article-parent {
+  width: 65%;
+}
+
+@media (max-width: 1000px) {
+  .article-parent {
+    width: 95%;
+  }
+}
+
+.blog-photo {
+  width: 65%;
+  height: auto;
+  padding-top: 30px;
+}
+
+@media (max-width: 1000px) {
+  .blog-photo {
+    width: 95%;
+  }
+}
+
+.sleeper-pic {
+  width: 280px;
+}
+
+.sleeper-parent {
+  height: 230px;
+  padding: 5%;
+}
+
+@media (max-width: 1000px) {
+  .sleeper-pic {
+    width: 85%;
+    height: auto;
+  }
+  .sleeper-parent {
+    margin-bottom: 20px;
+  }
+}
+
+.bet-graphic {
+  width: 85%;
+  height: auto;
+  padding: 2.5%;
+}
+
+.bracket-pic {
+  width: 95%;
+}
+
+.pro-bowl-score {
+  margin: 5px auto;
+  border-collapse: collapse;
+}
+
+.pb-border-topleft {
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+.pb-border-topcenter {
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+}
+
+.pb-border-bottomcenter {
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+}
+
+.pb-border-bottomleft {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+.pb-border-topright {
+  padding-top: 5px;
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+.pb-border-bottomright {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+.box-score-logo {
+  max-height: 100px;
+  width: auto;
+}
+
+.position-color {
+  background-color: #f5f5f5;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+
+.player-color {
+  background-color: #f5f5f5;
+}
+
+.player-team {
+  font-size: smaller;
+}
+
+.lightgray-bg {
+  background-color: #eeeeee;
+}
+
+.medgray-bg {
+  background-color: #cccccc;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.no-wrapper {
+  white-space: nowrap;
+}
+
+.trade-team {
+  font-size: initial;
+  font-weight: bold;
+}
+
+.team-article {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.player-article {
+  font-size: 1.05rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Team Plates */

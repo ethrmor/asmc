@@ -1,0 +1,334 @@
+<%- include("../partials/headers/main") %>
+
+<div class="container">
+  <div class="container-fluid">
+    <img src="/images/sportsbook_banner.png" alt="" class="banner" />
+  </div>
+
+  <div class="bottom-border">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white justify-content-center nav-pills"
+    >
+      <a class="nav-item nav-link nav-active" href="/sportsbook/">Summary</a>
+      <a class="nav-item nav-link" href="/sportsbook/bets">Active Bets</a>
+      <a class="nav-item nav-link" href="/sportsbook/history">Bet History</a>
+      <a class="nav-item nav-link" href="/sportsbook/lines">Betting Lines</a>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="container-fluid">
+      <div>
+        <h6 class="table-title">
+          <span class="league-table-title-fill">Summary</span>
+        </h6>
+        <div class="table-responsive">
+          <table
+            class="table table-hover standard-stats draft-table full-width"
+          >
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Owner</th>
+                <th>Franchise</th>
+                <th><abbr title="Logo">Logo</abbr></th>
+                <th><abbr title="Conference">Conf.</abbr></th>
+                <th><abbr title="Total Bets Placed">BP</abbr></th>
+                <th><abbr title="Wins">W</abbr></th>
+                <th><abbr title="Losses">L</abbr></th>
+                <th><abbr title="Pushes">Push</abbr></th>
+                <th><abbr title="Winning Percentage">Pct.</abbr></th>
+                <th><abbr title="Career Winnings">Winnings</abbr></th>
+                <th><abbr title="Career Losses">Losses</abbr></th>
+                <th><abbr title="Career Earnings">Earnings</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="left-align">Brian</td>
+                <td class="left-align">Cowboys</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="left-align">Caleb</td>
+                <td class="left-align">Leprechauns</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="left-align">Cameron</td>
+                <td class="left-align" style="white-space: nowrap;">
+                  White Panthers
+                </td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="left-align">Dan</td>
+                <td class="left-align">Baba Yagas</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="left-align">Ethan</td>
+                <td class="left-align">Silverbacks</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="left-align">Jacob</td>
+                <td class="left-align">Slayton Slayerz</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td class="left-align">Jorden</td>
+                <td class="left-align">Goathouse Alums</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/jorden/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td class="left-align">Juice</td>
+                <td class="left-align">Macdaddys</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/juice/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td class="left-align">Lucas</td>
+                <td class="left-align" style="white-space: nowrap;">
+                  Herbert St Hermits
+                </td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/lucas/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="left-align">Morgan</td>
+                <td class="left-align">Direwolves</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/morgan/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td class="left-align">Scott</td>
+                <td class="left-align">Outkasts</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/scott/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/western.png"
+                    alt="Western Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="left-align">Shawn</td>
+                <td class="left-align">45ers</td>
+                <td class="nfl-logo-pad">
+                  <img src="/images/shawn/logo.png" alt="" class="nfl-logo" />
+                </td>
+                <td class="nfl-logo-pad">
+                  <img
+                    src="/images/eastern.png"
+                    alt="Eastern Conference"
+                    class="nfl-logo"
+                  />
+                </td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>.000</td>
+                <td>$0</td>
+                <td>$0</td>
+                <td>$0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include("../partials/footer") %>
