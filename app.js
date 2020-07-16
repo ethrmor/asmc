@@ -188,6 +188,6 @@ app.get("/trades/2020", function (req, res) {
 // Tell Express To Listen
 // =====================================
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log("Server spinning on port 3000.");
 });
