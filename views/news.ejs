@@ -5,89 +5,29 @@
     <img src="/images/news_banner.png" alt="" class="banner" />
   </div>
 
+  <% articles.forEach(function(articles){ %>
   <div class="container-fluid news-parent no-padding-award">
-    <div class="">
+    <div>
       <a href="/article5">
         <div class="row news-margin">
           <div class="col-md-6 no-padding-award">
-            <img src="/images/blog-pic-5.png" alt="" class="news-pic" />
+            <img
+              src="/images/<%=article.image%>.png"
+              alt="<%=article.title%>"
+              class="news-pic"
+            />
           </div>
           <div class="col-md-6 no-padding-award blog-caption">
-            <h3>Startup Draft Recap & Reactions</h3>
-            <br /><br />
-            <p>Monday, July 13, 2020 11:15 AM</p>
+            <h3><%=article.title%></h3>
+            <br />
+            <br />
+            <p><%=article.time%></p>
           </div>
         </div>
       </a>
     </div>
   </div>
-
-  <div class="container-fluid news-parent no-padding-award">
-    <div class="">
-      <a href="/article4">
-        <div class="row news-margin">
-          <div class="col-md-6 no-padding-award">
-            <img src="/images/blog-pic-4.png" alt="" class="news-pic" />
-          </div>
-          <div class="col-md-6 no-padding-award blog-caption">
-            <h3>2020 Projected Win Totals</h3>
-            <br /><br />
-            <p>Monday, July 6, 2020 10:35 AM</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="container-fluid news-parent no-padding-award">
-    <div class="">
-      <a href="/article3">
-        <div class="row news-margin">
-          <div class="col-md-6 no-padding-award">
-            <img src="/images/blog-pic-3.png" alt="" class="news-pic" />
-          </div>
-          <div class="col-md-6 no-padding-award blog-caption">
-            <h3>2020 Projected Standings</h3>
-            <br /><br />
-            <p>Monday, July 6, 2020 08:11 AM</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <div class="container-fluid news-parent no-padding-award">
-    <div class="">
-      <a href="/article2">
-        <div class="row news-margin">
-          <div class="col-md-6 no-padding-award">
-            <img src="/images/blog-pic-2.png" alt="" class="news-pic" />
-          </div>
-          <div class="col-md-6 no-padding-award blog-caption">
-            <h3>Updated Draft Power Rankings Released</h3>
-            <br /><br />
-            <p>Wednesday, July 1, 2020 05:11 PM</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="container-fluid news-parent no-padding-award">
-    <div class="">
-      <a href="/article">
-        <div class="row news-margin">
-          <div class="col-md-6 no-padding-award">
-            <img src="/images/blog-pic.png" alt="" class="news-pic" />
-          </div>
-          <div class="col-md-6 no-padding-award blog-caption">
-            <h3>Draft Power Rankings Released</h3>
-            <br /><br />
-            <p>Monday, June 15, 2020 09:02 PM</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
+  <% }) %>
 </div>
 
 <%- include("partials/footer") %>
