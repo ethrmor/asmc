@@ -168,6 +168,10 @@ app.get("/article5", function (req, res) {
   res.render("article5");
 });
 
+app.get("/article6", function (req, res) {
+  res.render("article6");
+});
+
 app.get("/news", function (req, res) {
   res.render("news");
 });
