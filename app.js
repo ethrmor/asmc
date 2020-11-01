@@ -6,6 +6,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 const app = express();
 
 app.set("view engine", "ejs");
@@ -20,6 +21,8 @@ app.use(express.static(__dirname + "/public"));
 // Variables
 // =====================================
 
+const stats = require("./public/data/stats.json");
+
 // =====================================
 // Routes
 // =====================================
@@ -33,7 +36,7 @@ app.get("/owners", function (req, res) {
 });
 
 app.get("/owners/ethan", function (req, res) {
-  res.render("teams/ethan");
+  res.render("teams/ethan", { stats: stats });
 });
 
 app.get("/owners/cameron", function (req, res) {
