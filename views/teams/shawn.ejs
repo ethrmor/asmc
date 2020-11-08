@@ -51,34 +51,34 @@
           </thead>
           <tbody>
             <tr>
-              <td>2020</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="right-data">.000</td>
-              <td class="right-data">0,000.00</td>
-              <td class="right-data">0,000.00</td>
+              <td><%= stats[0].year[0].year %></td>
+              <td class="center-data"><%= stats[0].year[0].oGP %></td>
+              <td class="center-data"><%= stats[0].year[0].oW %></td>
+              <td class="center-data"><%= stats[0].year[0].oL %></td>
+              <td class="center-data"><%= stats[0].year[0].oT %></td>
+              <td class="right-data"><%= stats[0].year[0].oPct %></td>
+              <td class="right-data"><%= stats[0].year[0].oPF %></td>
+              <td class="right-data"><%= stats[0].year[0].oPA %></td>
             </tr>
             <tr class="career-stats">
               <td>Career</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="right-data">.000</td>
-              <td class="right-data">0,000.00</td>
-              <td class="right-data">0,000.00</td>
+              <td class="center-data"><%= stats[0].average.oGP %></td>
+              <td class="center-data"><%= stats[0].average.oW %></td>
+              <td class="center-data"><%= stats[0].average.oL %></td>
+              <td class="center-data"><%= stats[0].average.oT %></td>
+              <td class="right-data"><%= stats[0].average.oPct %></td>
+              <td class="right-data"><%= stats[0].average.oPF %></td>
+              <td class="right-data"><%= stats[0].average.oPA %></td>
             </tr>
             <tr class="career-stats">
               <td>Average</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="center-data">0</td>
-              <td class="right-data">.000</td>
-              <td class="right-data">0,000.00</td>
-              <td class="right-data">0,000.00</td>
+              <td class="center-data"><%= stats[0].total.oGP %></td>
+              <td class="center-data"><%= stats[0].total.oW %></td>
+              <td class="center-data"><%= stats[0].total.oL %></td>
+              <td class="center-data"><%= stats[0].total.oT %></td>
+              <td class="right-data"><%= stats[0].total.oPct %></td>
+              <td class="right-data"><%= stats[0].total.oPF %></td>
+              <td class="right-data"><%= stats[0].total.oPA %></td>
             </tr>
           </tbody>
         </table>
@@ -97,738 +97,527 @@
 
 <!-- Statistics -->
 
-  <div class="section-title">
-    <h2 class="underline">Statistics</h2>
-  </div>
+<div class="section-title">
+  <h2 class="underline">Statistics</h2>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Overall</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Games Played">GP</abbr></th>
-            <th><abbr title="Wins">W</abbr></th>
-            <th><abbr title="Losses">L</abbr></th>
-            <th><abbr title="Ties">T</abbr></th>
-            <th><abbr title="Winning Percentage">Pct.</abbr></th>
-            <th><abbr title="Season Finish">Fin</abbr></th>
-            <th><abbr title="Transactions">Txn</abbr></th>
-            <th><abbr title="Trades">Trd</abbr></th>
-            <th><abbr title="Points For">PF</abbr></th>
-            <th><abbr title="Points Against">PA</abbr></th>
-            <th><abbr title="Point Spread">PS</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Game Avg</td>
-            <td colspan="8"></td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Overall</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Games Played">GP</abbr></th>
+          <th><abbr title="Wins">W</abbr></th>
+          <th><abbr title="Losses">L</abbr></th>
+          <th><abbr title="Ties">T</abbr></th>
+          <th><abbr title="Winning Percentage">Pct.</abbr></th>
+          <th><abbr title="Season Finish">Fin</abbr></th>
+          <th><abbr title="Transactions">Txn</abbr></th>
+          <th><abbr title="Trades">Trd</abbr></th>
+          <th><abbr title="Points For">PF</abbr></th>
+          <th><abbr title="Points Against">PA</abbr></th>
+          <th><abbr title="Point Spread">PS</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td class="center-data"><%= stats[0].year[0].oGP %></td>
+          <td class="center-data"><%= stats[0].year[0].oW %></td>
+          <td class="center-data"><%= stats[0].year[0].oL %></td>
+          <td class="center-data"><%= stats[0].year[0].oT %></td>
+          <td class="right-data"><%= stats[0].year[0].oPct %></td>
+          <td><%= stats[0].year[0].oFin %></td>
+          <td><%= stats[0].year[0].txn %></td>
+          <td><%= stats[0].year[0].trd %></td>
+          <td class="right-data"><%= stats[0].year[0].oPF %></td>
+          <td class="right-data"><%= stats[0].year[0].oPA %></td>
+          <td class="right-data"><%= stats[0].year[0].oPS %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class="center-data"><%= stats[0].average.oGP %></td>
+          <td class="center-data"><%= stats[0].average.oW %></td>
+          <td class="center-data"><%= stats[0].average.oL %></td>
+          <td class="center-data"><%= stats[0].average.oT %></td>
+          <td class="right-data"><%= stats[0].average.oPct %></td>
+          <td><%= stats[0].average.oFin %></td>
+          <td><%= stats[0].average.txn %></td>
+          <td><%= stats[0].average.trd %></td>
+          <td class="right-data"><%= stats[0].average.oPF %></td>
+          <td class="right-data"><%= stats[0].average.oPA %></td>
+          <td class="right-data"><%= stats[0].average.oPS %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class="center-data"><%= stats[0].total.oGP %></td>
+          <td class="center-data"><%= stats[0].total.oW %></td>
+          <td class="center-data"><%= stats[0].total.oL %></td>
+          <td class="center-data"><%= stats[0].total.oT %></td>
+          <td class="right-data"><%= stats[0].total.oPct %></td>
+          <td><%= stats[0].total.oFin %></td>
+          <td><%= stats[0].total.txn %></td>
+          <td><%= stats[0].total.trd %></td>
+          <td class="right-data"><%= stats[0].total.oPF %></td>
+          <td class="right-data"><%= stats[0].total.oPA %></td>
+          <td class="right-data"><%= stats[0].total.oPS %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Advanced</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="ASMC Power Ranking">APR</abbr></th>
-            <th><abbr title="Adjusted ASMC Power Ranking">APR+</abbr></th>
-            <th><abbr title="Legacy Score">LS</abbr></th>
-            <th><abbr title="Expected Wins">ExW</abbr></th>
-            <th><abbr title="Expected Losses">ExL</abbr></th>
-            <th><abbr title="Expected Winning Percentage">ExP</abbr></th>
-            <th><abbr title="Maximum Points For">MPF</abbr></th>
-            <th><abbr title="Maximum Points Differential">MPD</abbr></th>
-            <th><abbr title="Maximum Points Differential Per Game">MPD/G</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td>000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td>.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td>000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td>.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Advanced</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="ASMC Power Ranking">APR</abbr></th>
+          <th><abbr title="Adjusted ASMC Power Ranking">APR+</abbr></th>
+          <th><abbr title="Legacy Score">LS</abbr></th>
+          <th><abbr title="Expected Wins">ExW</abbr></th>
+          <th><abbr title="Expected Losses">ExL</abbr></th>
+          <th><abbr title="Expected Winning Percentage">ExP</abbr></th>
+          <th><abbr title="Maximum Points For">MPF</abbr></th>
+          <th><abbr title="Maximum Points Differential">MPD</abbr></th>
+          <th><abbr title="Maximum Points Differential Per Game">MPD/G</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td class="right-data"><%= stats[0].year[0].apr %></td>
+          <td><%= stats[0].year[0].aprp %></td>
+          <td><%= stats[0].year[0].leg %></td>
+          <td><%= stats[0].year[0].xW %></td>
+          <td><%= stats[0].year[0].xL %></td>
+          <td class="right-data"><%= stats[0].year[0].xPct %></td>
+          <td><%= stats[0].year[0].mpf %></td>
+          <td><%= stats[0].year[0].mpd %></td>
+          <td><%= stats[0].year[0].mpdg %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class="right-data"><%= stats[0].average.apr %></td>
+          <td><%= stats[0].average.aprp %></td>
+          <td><%= stats[0].average.leg %></td>
+          <td><%= stats[0].average.xW %></td>
+          <td><%= stats[0].average.xL %></td>
+          <td class="right-data"><%= stats[0].average.xPct %></td>
+          <td><%= stats[0].average.mpf %></td>
+          <td><%= stats[0].average.mpd %></td>
+          <td><%= stats[0].average.mpdg %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class="right-data"><%= stats[0].total.apr %></td>
+          <td><%= stats[0].total.aprp %></td>
+          <td><%= stats[0].total.leg %></td>
+          <td><%= stats[0].total.xW %></td>
+          <td><%= stats[0].total.xL %></td>
+          <td class="right-data"><%= stats[0].total.xPct %></td>
+          <td><%= stats[0].total.mpf %></td>
+          <td><%= stats[0].total.mpd %></td>
+          <td><%= stats[0].total.mpdg %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Regular Season</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Games Played">GP</abbr></th>
-            <th><abbr title="Wins">W</abbr></th>
-            <th><abbr title="Losses">L</abbr></th>
-            <th><abbr title="Ties">T</abbr></th>
-            <th><abbr title="Winning Percentage">Pct.</abbr></th>
-            <th><abbr title="Season Finish">Fin</abbr></th>
-            <th><abbr title="Transactions">Txn</abbr></th>
-            <th><abbr title="Trades">Trd</abbr></th>
-            <th><abbr title="Points For">PF</abbr></th>
-            <th><abbr title="Points Against">PA</abbr></th>
-            <th><abbr title="Point Spread">PS</abbr></th>
-            <th><abbr title="Single Game High">Game Hi</abbr></th>
-            <th><abbr title="Single Game Low">Game Lo</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Game Avg</td>
-            <td colspan="8"></td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td colspan="2"></td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Regular Season</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Games Played">GP</abbr></th>
+          <th><abbr title="Wins">W</abbr></th>
+          <th><abbr title="Losses">L</abbr></th>
+          <th><abbr title="Ties">T</abbr></th>
+          <th><abbr title="Winning Percentage">Pct.</abbr></th>
+          <th><abbr title="Season Finish">Fin</abbr></th>
+          <th><abbr title="Transactions">Txn</abbr></th>
+          <th><abbr title="Trades">Trd</abbr></th>
+          <th><abbr title="Points For">PF</abbr></th>
+          <th><abbr title="Points Against">PA</abbr></th>
+          <th><abbr title="Point Spread">PS</abbr></th>
+          <th><abbr title="Single Game High">Game Hi</abbr></th>
+          <th><abbr title="Single Game Low">Game Lo</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td class="center-data"><%= stats[0].year[0].rGP %></td>
+          <td class="center-data"><%= stats[0].year[0].rW %></td>
+          <td class="center-data"><%= stats[0].year[0].rL %></td>
+          <td class="center-data"><%= stats[0].year[0].rT %></td>
+          <td class="right-data"><%= stats[0].year[0].rPct %></td>
+          <td><%= stats[0].year[0].rFin %></td>
+          <td><%= stats[0].year[0].txn %></td>
+          <td><%= stats[0].year[0].trd %></td>
+          <td class="right-data"><%= stats[0].year[0].rPF %></td>
+          <td class="right-data"><%= stats[0].year[0].rPA %></td>
+          <td class="right-data"><%= stats[0].year[0].rPS %></td>
+          <td class="right-data"><%= stats[0].year[0].gameHi %></td>
+          <td class="right-data"><%= stats[0].year[0].gameLo %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class="center-data"><%= stats[0].average.rGP %></td>
+          <td class="center-data"><%= stats[0].average.rW %></td>
+          <td class="center-data"><%= stats[0].average.rL %></td>
+          <td class="center-data"><%= stats[0].average.rT %></td>
+          <td class="right-data"><%= stats[0].average.rPct %></td>
+          <td><%= stats[0].average.rFin %></td>
+          <td><%= stats[0].average.txn %></td>
+          <td><%= stats[0].average.trd %></td>
+          <td class="right-data"><%= stats[0].average.rPF %></td>
+          <td class="right-data"><%= stats[0].average.rPA %></td>
+          <td class="right-data"><%= stats[0].average.rPS %></td>
+          <td class="right-data"><%= stats[0].average.gameHi %></td>
+          <td class="right-data"><%= stats[0].average.gameLo %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class="center-data"><%= stats[0].total.rGP %></td>
+          <td class="center-data"><%= stats[0].total.rW %></td>
+          <td class="center-data"><%= stats[0].total.rL %></td>
+          <td class="center-data"><%= stats[0].total.rT %></td>
+          <td class="right-data"><%= stats[0].total.rPct %></td>
+          <td><%= stats[0].total.rFin %></td>
+          <td><%= stats[0].total.txn %></td>
+          <td><%= stats[0].total.trd %></td>
+          <td class="right-data"><%= stats[0].total.rPF %></td>
+          <td class="right-data"><%= stats[0].total.rPA %></td>
+          <td class="right-data"><%= stats[0].total.rPS %></td>
+          <td class="right-data"><%= stats[0].total.gameHi %></td>
+          <td class="right-data"><%= stats[0].total.gameLo %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Playoffs</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Playoff Appearances">App</abbr></th>
-            <th><abbr title="First Round Byes">Bye</abbr></th>
-            <th><abbr title="Games Played">GP</abbr></th>
-            <th><abbr title="Wins">W</abbr></th>
-            <th><abbr title="Losses">L</abbr></th>
-            <th><abbr title="Ties">T</abbr></th>
-            <th><abbr title="Winning Percentage">Pct.</abbr></th>
-            <th><abbr title="Points For">PF</abbr></th>
-            <th><abbr title="Points Against">PA</abbr></th>
-            <th><abbr title="Points Spread">PS</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Game Avg</td>
-            <td colspan="7"></td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td colspan="2"></td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Playoffs</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Playoff Appearances">App</abbr></th>
+          <th><abbr title="First Round Byes">Bye</abbr></th>
+          <th><abbr title="Games Played">GP</abbr></th>
+          <th><abbr title="Wins">W</abbr></th>
+          <th><abbr title="Losses">L</abbr></th>
+          <th><abbr title="Winning Percentage">Pct.</abbr></th>
+          <th><abbr title="Points For">PF</abbr></th>
+          <th><abbr title="Points Against">PA</abbr></th>
+          <th><abbr title="Points Spread">PS</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td><%= stats[0].year[0].pApp %></td>
+          <td class="left-data"><%= stats[0].year[0].pBye %></td>
+          <td class="center-data"><%= stats[0].year[0].pGP %></td>
+          <td class="center-data"><%= stats[0].year[0].pW %></td>
+          <td class="center-data"><%= stats[0].year[0].pL %></td>
+          <td class="right-data"><%= stats[0].year[0].pPct %></td>
+          <td class="right-data"><%= stats[0].year[0].pPF %></td>
+          <td class="right-data"><%= stats[0].year[0].pPA %></td>
+          <td class="right-data"><%= stats[0].year[0].pPS %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td colspan="2"></td>
+          <td class="center-data"><%= stats[0].average.pGP %></td>
+          <td class="center-data"><%= stats[0].average.pW %></td>
+          <td class="center-data"><%= stats[0].average.pL %></td>
+          <td class="right-data"><%= stats[0].average.pPct %></td>
+          <td class="right-data"><%= stats[0].average.pPF %></td>
+          <td class="right-data"><%= stats[0].average.pPA %></td>
+          <td class="right-data"><%= stats[0].average.pPS %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td><%= stats[0].total.pApp %></td>
+          <td class="left-data"><%= stats[0].total.pBye %></td>
+          <td class="center-data"><%= stats[0].total.pGP %></td>
+          <td class="center-data"><%= stats[0].total.pW %></td>
+          <td class="center-data"><%= stats[0].total.pL %></td>
+          <td class="right-data"><%= stats[0].total.pPct %></td>
+          <td class="right-data"><%= stats[0].total.pPF %></td>
+          <td class="right-data"><%= stats[0].total.pPA %></td>
+          <td class="right-data"><%= stats[0].total.pPS %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Championships</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Games Played">GP</abbr></th>
-            <th><abbr title="Wins">W</abbr></th>
-            <th><abbr title="Losses">L</abbr></th>
-            <th><abbr title="Ties">T</abbr></th>
-            <th><abbr title="Winning Percentage">Pct.</abbr></th>
-            <th><abbr title="Points For">PF</abbr></th>
-            <th><abbr title="Points Against">PA</abbr></th>
-            <th><abbr title="Points Spread">PS</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Game Avg</td>
-            <td colspan="5"></td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Championships</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Games Played">GP</abbr></th>
+          <th><abbr title="Wins">W</abbr></th>
+          <th><abbr title="Losses">L</abbr></th>
+          <th><abbr title="Winning Percentage">Pct.</abbr></th>
+          <th><abbr title="Points For">PF</abbr></th>
+          <th><abbr title="Points Against">PA</abbr></th>
+          <th><abbr title="Points Spread">PS</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td class="center-data"><%= stats[0].year[0].cGP %></td>
+          <td class="center-data"><%= stats[0].year[0].cW %></td>
+          <td class="center-data"><%= stats[0].year[0].cL %></td>
+          <td class="right-data"><%= stats[0].year[0].cPct %></td>
+          <td class="right-data"><%= stats[0].year[0].cPF %></td>
+          <td class="right-data"><%= stats[0].year[0].cPA %></td>
+          <td class="right-data"><%= stats[0].year[0].cPS %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class="center-data"><%= stats[0].average.cGP %></td>
+          <td class="center-data"><%= stats[0].average.cW %></td>
+          <td class="center-data"><%= stats[0].average.cL %></td>
+          <td class="right-data"><%= stats[0].average.cPct %></td>
+          <td class="right-data"><%= stats[0].average.cPF %></td>
+          <td class="right-data"><%= stats[0].average.cPA %></td>
+          <td class="right-data"><%= stats[0].average.cPS %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class="center-data"><%= stats[0].total.cGP %></td>
+          <td class="center-data"><%= stats[0].total.cW %></td>
+          <td class="center-data"><%= stats[0].total.cL %></td>
+          <td class="right-data"><%= stats[0].total.cPct %></td>
+          <td class="right-data"><%= stats[0].total.cPF %></td>
+          <td class="right-data"><%= stats[0].total.cPA %></td>
+          <td class="right-data"><%= stats[0].total.cPS %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-   <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Per Game</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th></th>            
-            <th colspan="3">Regular Season</th>
-            <th colspan="3">Playoffs</th>
-            <th colspan="3">Championship</th>
-          </tr>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Points For/Game">PF/G</abbr></th>
-            <th><abbr title="Points Against/Game">PA/G</abbr></th>
-            <th><abbr title="Point Spread/Game">PS/G</abbr></th>
-            <th><abbr title="Points For/Game">PF/G</abbr></th>
-            <th><abbr title="Points Against/Game">PA/G</abbr></th>
-            <th><abbr title="Point Spread/Game">PS/G</abbr></th>
-            <th><abbr title="Points For/Game">PF/G</abbr></th>
-            <th><abbr title="Points Against/Game">PA/G</abbr></th>
-            <th><abbr title="Point Spread/Game">PS/G</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">2020</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2021</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr>
-            <td class="left-data">2022</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+ <div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Per Game</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th></th>            
+          <th colspan="3">Regular Season</th>
+          <th colspan="3">Playoffs</th>
+          <th colspan="3">Championship</th>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Points For/Game">PF/G</abbr></th>
+          <th><abbr title="Points Against/Game">PA/G</abbr></th>
+          <th><abbr title="Point Spread/Game">PS/G</abbr></th>
+          <th><abbr title="Points For/Game">PF/G</abbr></th>
+          <th><abbr title="Points Against/Game">PA/G</abbr></th>
+          <th><abbr title="Point Spread/Game">PS/G</abbr></th>
+          <th><abbr title="Points For/Game">PF/G</abbr></th>
+          <th><abbr title="Points Against/Game">PA/G</abbr></th>
+          <th><abbr title="Point Spread/Game">PS/G</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data"><%= stats[0].year[0].year %></td>
+          <td class="right-data"><%= stats[0].year[0].spg %></td>
+          <td class="right-data"><%= stats[0].year[0].spa %></td>
+          <td class="right-data"><%= stats[0].year[0].sps %></td>
+          <td class="right-data"><%= stats[0].year[0].ppg %></td>
+          <td class="right-data"><%= stats[0].year[0].ppa %></td>
+          <td class="right-data"><%= stats[0].year[0].pps %></td>
+          <td class="right-data"><%= stats[0].year[0].cpg %></td>
+          <td class="right-data"><%= stats[0].year[0].cpa %></td>
+          <td class="right-data"><%= stats[0].year[0].cps %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class="right-data"><%= stats[0].average.spg %></td>
+          <td class="right-data"><%= stats[0].average.spa %></td>
+          <td class="right-data"><%= stats[0].average.sps %></td>
+          <td class="right-data"><%= stats[0].average.ppg %></td>
+          <td class="right-data"><%= stats[0].average.ppa %></td>
+          <td class="right-data"><%= stats[0].average.pps %></td>
+          <td class="right-data"><%= stats[0].average.cpg %></td>
+          <td class="right-data"><%= stats[0].average.cpa %></td>
+          <td class="right-data"><%= stats[0].average.cps %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class="right-data"><%= stats[0].total.spg %></td>
+          <td class="right-data"><%= stats[0].total.spa %></td>
+          <td class="right-data"><%= stats[0].total.sps %></td>
+          <td class="right-data"><%= stats[0].total.ppg %></td>
+          <td class="right-data"><%= stats[0].total.ppa %></td>
+          <td class="right-data"><%= stats[0].total.pps %></td>
+          <td class="right-data"><%= stats[0].total.cpg %></td>
+          <td class="right-data"><%= stats[0].total.cpa %></td>
+          <td class="right-data"><%= stats[0].total.cps %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Best Ball</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th></th>            
-            <th colspan="3">Actual</th>
-            <th colspan="3">Expected</th>
-          </tr>
-          <tr>
-            <th>Year</th>
-            <th><abbr title="Actual Wins">Wins</abbr></th>
-            <th><abbr title="Actual Losses">Losses</abbr></th>
-            <th><abbr title="Actual Win Percentage">Pct</abbr></th>
-            <th><abbr title="Expected Wins">Wins</abbr></th>
-            <th><abbr title="Expected Losses">Losses</abbr></th>
-            <th><abbr title="Expected Win Percentage">Pct</abbr></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-align">2020</td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-          <tr>
-            <td class="left-align">2021</td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-          <tr>
-            <td class="left-align">2022</td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-          <tr class="average-stats">
-            <td class="left-data">Season Avg</td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-          <tr class="career-stats">
-            <td class="left-data">Total</td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Best Ball</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th></th>            
+          <th colspan="3">Actual</th>
+          <th colspan="3">Expected</th>
+        </tr>
+        <tr>
+          <th>Year</th>
+          <th><abbr title="Actual Wins">Wins</abbr></th>
+          <th><abbr title="Actual Losses">Losses</abbr></th>
+          <th><abbr title="Actual Win Percentage">Pct</abbr></th>
+          <th><abbr title="Expected Wins">Wins</abbr></th>
+          <th><abbr title="Expected Losses">Losses</abbr></th>
+          <th><abbr title="Expected Win Percentage">Pct</abbr></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-align"><%= stats[0].year[0].year %></td>
+          <td class=""><%= stats[0].year[0].bbAW %></td>
+          <td class=""><%= stats[0].year[0].bbAL %></td>
+          <td class="right-data"><%= stats[0].year[0].bbAPct %></td>
+          <td class=""><%= stats[0].year[0].bbXW %></td>
+          <td class=""><%= stats[0].year[0].bbXL %></td>
+          <td class="right-data"><%= stats[0].year[0].bbXPct %></td>
+        </tr>
+        <tr class="average-stats">
+          <td class="left-data">Season Avg</td>
+          <td class=""><%= stats[0].average.bbAW %></td>
+          <td class=""><%= stats[0].average.bbAL %></td>
+          <td class="right-data"><%= stats[0].average.bbAPct %></td>
+          <td class=""><%= stats[0].average.bbXW %></td>
+          <td class=""><%= stats[0].average.bbXL %></td>
+          <td class="right-data"><%= stats[0].average.bbXPct %></td>
+        </tr>
+        <tr class="career-stats">
+          <td class="left-data">Total</td>
+          <td class=""><%= stats[0].total.bbAW %></td>
+          <td class=""><%= stats[0].total.bbAL %></td>
+          <td class="right-data"><%= stats[0].total.bbAPct %></td>
+          <td class=""><%= stats[0].total.bbXW %></td>
+          <td class=""><%= stats[0].total.bbXL %></td>
+          <td class="right-data"><%= stats[0].total.bbXPct %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
-  <div class="container-fluid">
-    <h6 class="table-title">
-      <span class="shawn-table-title-fill">Head-to-Head</span>
-    </h6>
-    <div class="table-responsive">
-      <table class="table table-hover standard-stats draft-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Brian</th>
-            <th>Caleb</th>
-            <th>Cameron</th>
-            <th>Dan</th>
-            <th>Jacob</th>
-            <th>Jorden</th>
-            <th>Juice</th>
-            <th>Lucas</th>
-            <th>Morgan</th>
-            <th>Scott</th>
-            <th>Shawn</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="left-data">Season</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-          </tr>
-          <tr>
-            <td class="left-data">Playoffs</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-          </tr>
-          <tr class="career-stats">
-            <td>Overall</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-            <td>0-0</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="container-fluid">
+  <h6 class="table-title">
+    <span class="shawn-table-title-fill">Head-to-Head</span>
+  </h6>
+  <div class="table-responsive">
+    <table class="table table-hover standard-stats draft-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Brian</th>
+          <th>Caleb</th>
+          <th>Cameron</th>
+          <th>Dan</th>
+          <th>Ethan</th>
+          <th>Jacob</th>
+          <th>Jorden</th>
+          <th>Juice</th>
+          <th>Lucas</th>
+          <th>Morgan</th>
+          <th>Scott</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="left-data">Season</td>
+          <td><%= stats[0].opponent.season.brian %></td>
+          <td><%= stats[0].opponent.season.caleb %></td>
+          <td><%= stats[0].opponent.season.cameron %></td>
+          <td><%= stats[0].opponent.season.dan %></td>
+          <td><%= stats[0].opponent.season.ethan %></td>
+          <td><%= stats[0].opponent.season.jacob %></td>
+          <td><%= stats[0].opponent.season.jorden %></td>
+          <td><%= stats[0].opponent.season.juice %></td>
+          <td><%= stats[0].opponent.season.lucas %></td>
+          <td><%= stats[0].opponent.season.morgan %></td>
+          <td><%= stats[0].opponent.season.scott %></td>
+        </tr>
+        <tr>
+          <td class="left-data">Playoffs</td>
+          <td><%= stats[0].opponent.playoffs.brian %></td>
+          <td><%= stats[0].opponent.playoffs.caleb %></td>
+          <td><%= stats[0].opponent.playoffs.cameron %></td>
+          <td><%= stats[0].opponent.playoffs.dan %></td>
+          <td><%= stats[0].opponent.playoffs.ethan %></td>
+          <td><%= stats[0].opponent.playoffs.jacob %></td>
+          <td><%= stats[0].opponent.playoffs.jorden %></td>
+          <td><%= stats[0].opponent.playoffs.juice %></td>
+          <td><%= stats[0].opponent.playoffs.lucas %></td>
+          <td><%= stats[0].opponent.playoffs.morgan %></td>
+          <td><%= stats[0].opponent.playoffs.scott %></td>
+        </tr>
+        <tr class="career-stats">
+          <td>Overall</td>
+          <td><%= stats[0].opponent.overall.brian %></td>
+          <td><%= stats[0].opponent.overall.caleb %></td>
+          <td><%= stats[0].opponent.overall.cameron %></td>
+          <td><%= stats[0].opponent.overall.dan %></td>
+          <td><%= stats[0].opponent.overall.ethan %></td>
+          <td><%= stats[0].opponent.overall.jacob %></td>
+          <td><%= stats[0].opponent.overall.jorden %></td>
+          <td><%= stats[0].opponent.overall.juice %></td>
+          <td><%= stats[0].opponent.overall.lucas %></td>
+          <td><%= stats[0].opponent.overall.morgan %></td>
+          <td><%= stats[0].opponent.overall.scott %></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+</div>
 
 <!-- Roster -->
 

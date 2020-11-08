@@ -40,47 +40,47 @@ app.get("/owners/ethan", function (req, res) {
 });
 
 app.get("/owners/cameron", function (req, res) {
-  res.render("teams/cameron");
+  res.render("teams/cameron", { stats: stats });
 });
 
 app.get("/owners/jacob", function (req, res) {
-  res.render("teams/jacob");
+  res.render("teams/jacob", { stats: stats });
 });
 
 app.get("/owners/brian", function (req, res) {
-  res.render("teams/brian");
+  res.render("teams/brian", { stats: stats });
 });
 
 app.get("/owners/caleb", function (req, res) {
-  res.render("teams/caleb");
+  res.render("teams/caleb", { stats: stats });
 });
 
 app.get("/owners/dan", function (req, res) {
-  res.render("teams/dan");
+  res.render("teams/dan", { stats: stats });
 });
 
 app.get("/owners/jorden", function (req, res) {
-  res.render("teams/jorden");
+  res.render("teams/jorden", { stats: stats });
 });
 
 app.get("/owners/juice", function (req, res) {
-  res.render("teams/juice");
+  res.render("teams/juice", { stats: stats });
 });
 
 app.get("/owners/lucas", function (req, res) {
-  res.render("teams/lucas");
+  res.render("teams/lucas", { stats: stats });
 });
 
 app.get("/owners/scott", function (req, res) {
-  res.render("teams/scott");
+  res.render("teams/scott", { stats: stats });
 });
 
 app.get("/owners/shawn", function (req, res) {
-  res.render("teams/shawn");
+  res.render("teams/shawn", { stats: stats });
 });
 
 app.get("/owners/morgan", function (req, res) {
-  res.render("teams/morgan");
+  res.render("teams/morgan", { stats: stats });
 });
 
 app.get("/seasons/2020", function (req, res) {
