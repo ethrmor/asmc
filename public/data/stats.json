@@ -2,7 +2,8 @@
   {
     "name": "Brian",
     "franchise": "Quarantine Cowboys",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "brian",
     "year": [
       {
         "year": "2020",
@@ -248,7 +249,8 @@
   {
     "name": "Caleb",
     "franchise": "Jeff City Leprechauns",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "caleb",
     "year": [
       {
         "year": "2020",
@@ -494,7 +496,8 @@
   {
     "name": "Cameron",
     "franchise": "White Panthers",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "cameron",
     "year": [
       {
         "year": "2020",
@@ -740,7 +743,8 @@
   {
     "name": "Dan",
     "franchise": "Baba Yagas",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "dan",
     "year": [
       {
         "year": "2020",
@@ -986,7 +990,8 @@
   {
     "name": "Ethan",
     "franchise": "Silverbacks",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "ethan",
     "year": [
       {
         "year": "2020",
@@ -1232,7 +1237,8 @@
   {
     "name": "Jacob",
     "franchise": "Slayton Slayerz",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "jacob",
     "year": [
       {
         "year": "2020",
@@ -1478,7 +1484,8 @@
   {
     "name": "Jorden",
     "franchise": "Goathouse Alums",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "jorden",
     "year": [
       {
         "year": "2020",
@@ -1724,7 +1731,8 @@
   {
     "name": "Juice",
     "franchise": "Midwest Macdaddys",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "juice",
     "year": [
       {
         "year": "2020",
@@ -1970,7 +1978,8 @@
   {
     "name": "Lucas",
     "franchise": "Herbert St. Hermits",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "lucas",
     "year": [
       {
         "year": "2020",
@@ -2216,7 +2225,8 @@
   {
     "name": "Morgan",
     "franchise": "Direwolves",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "morgan",
     "year": [
       {
         "year": "2020",
@@ -2462,7 +2472,8 @@
   {
     "name": "Scott",
     "franchise": "Outkasts",
-    "conference": "Western",
+    "conference": "western",
+    "lowerName": "scott",
     "year": [
       {
         "year": "2020",
@@ -2708,7 +2719,8 @@
   {
     "name": "Shawn",
     "franchise": "45ers",
-    "conference": "Eastern",
+    "conference": "eastern",
+    "lowerName": "shawn",
     "year": [
       {
         "year": "2020",
