@@ -2,6 +2,7 @@
   {
     "name": "Brian",
     "franchise": "Quarantine Cowboys",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -247,6 +248,7 @@
   {
     "name": "Caleb",
     "franchise": "Jeff City Leprechauns",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -492,6 +494,7 @@
   {
     "name": "Cameron",
     "franchise": "White Panthers",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -737,6 +740,7 @@
   {
     "name": "Dan",
     "franchise": "Baba Yagas",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -982,6 +986,7 @@
   {
     "name": "Ethan",
     "franchise": "Silverbacks",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -1227,6 +1232,7 @@
   {
     "name": "Jacob",
     "franchise": "Slayton Slayerz",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -1472,6 +1478,7 @@
   {
     "name": "Jorden",
     "franchise": "Goathouse Alums",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -1717,6 +1724,7 @@
   {
     "name": "Juice",
     "franchise": "Midwest Macdaddys",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -1962,6 +1970,7 @@
   {
     "name": "Lucas",
     "franchise": "Herbert St. Hermits",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -2207,6 +2216,7 @@
   {
     "name": "Morgan",
     "franchise": "Direwolves",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -2452,6 +2462,7 @@
   {
     "name": "Scott",
     "franchise": "Outkasts",
+    "conference": "Western",
     "year": [
       {
         "year": "2020",
@@ -2697,6 +2708,7 @@
   {
     "name": "Shawn",
     "franchise": "45ers",
+    "conference": "Eastern",
     "year": [
       {
         "year": "2020",
@@ -2937,6 +2949,73 @@
         "scott": "",
         "shawn": ""
       }
+    }
+  },
+  {
+    "name": "Average",
+    "average": {
+      "oGP": "",
+      "oW": "",
+      "oL": "",
+      "oT": "",
+      "oPct": "",
+      "oFin": "",
+      "txn": "",
+      "trd": "",
+      "oPF": "",
+      "oPA": "",
+      "oPS": "",
+      "apr": "",
+      "aprp": "",
+      "leg": "",
+      "xW": "",
+      "xL": "",
+      "xPct": "",
+      "mpf": "",
+      "mpd": "",
+      "mpdg": "",
+      "rGP": "",
+      "rW": "",
+      "rL": "",
+      "rT": "",
+      "rPct": "",
+      "rFin": "",
+      "rPF": "",
+      "rPA": "",
+      "rPS": "",
+      "gameHi": "",
+      "gameLo": "",
+      "pApp": "",
+      "pBye": "",
+      "pGP": "",
+      "pW": "",
+      "pL": "",
+      "pPct": "",
+      "pPF": "",
+      "pPA": "",
+      "pPS": "",
+      "cGP": "",
+      "cW": "",
+      "cL": "",
+      "cPct": "",
+      "cPF": "",
+      "cPA": "",
+      "cPS": "",
+      "spg": "",
+      "spa": "",
+      "sps": "",
+      "ppg": "",
+      "ppa": "",
+      "pps": "",
+      "cpg": "",
+      "cpa": "",
+      "cps": "",
+      "bbAW": "",
+      "bbAL": "",
+      "bbAPct": "",
+      "bbXW": "",
+      "bbXL": "",
+      "bbXPct": ""
     }
   }
 ]

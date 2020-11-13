@@ -84,19 +84,15 @@ app.get("/owners/morgan", function (req, res) {
 });
 
 app.get("/seasons/2020", function (req, res) {
-  res.render("seasons/2020");
+  res.render("seasons/2020", { stats: stats });
 });
 
 app.get("/seasons/all", function (req, res) {
-  res.render("seasons/all");
-});
-
-app.get("/seasons/startup", function (req, res) {
-  res.render("seasons/startup");
+  res.render("seasons/all", { stats: stats });
 });
 
 app.get("/stats", function (req, res) {
-  res.render("stats");
+  res.render("stats", { stats: stats });
 });
 
 app.get("/records", function (req, res) {
