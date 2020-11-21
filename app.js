@@ -6,7 +6,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const fs = require("fs");
+const https = require("https");
 const app = express();
 
 app.set("view engine", "ejs");
@@ -22,13 +22,16 @@ app.use(express.static(__dirname + "/public"));
 // =====================================
 
 const stats = require("./public/data/stats.json");
+const players = require("./public/data/players.json");
+const sleeperTeams =
+  "https://api.sleeper.app/v1/league/570110971838902272/rosters";
 
 // =====================================
 // Routes
 // =====================================
 
 app.get("/", function (req, res) {
-  res.render("landing");
+  res.render("landing", { players: players });
 });
 
 app.get("/owners", function (req, res) {
@@ -36,7 +39,20 @@ app.get("/owners", function (req, res) {
 });
 
 app.get("/owners/ethan", function (req, res) {
-  res.render("teams/ethan", { stats: stats });
+  https.get(sleeperTeams, (res) => {
+    let info = "";
+    res.on("data", (chunk) => {
+      info += chunk;
+    });
+    res.on("end", () => {
+      let sleeperData = JSON.parse(info);
+      let playerData = sleeperData[0].players;
+    });
+  });
+  res.render("teams/ethan", {
+    stats,
+    players,
+  });
 });
 
 app.get("/owners/cameron", function (req, res) {
