@@ -621,16 +621,51 @@
 
 <!-- Roster -->
 
-  <div class="section-title">
-    <h2 class="underline">Roster</h2>
-  </div>
+<div class="section-title">
+  <h2 class="underline">Roster</h2>
+</div>
 
- <div class="container-fluid blog-photo">
-    <div class="news news-pic">
-      <h2>Rosters Under Construction!</h2>
-      <p>Come back soon!</p>
-    </div>
+<div class="container-fluid">
+  <h5 class="left-data no-padding">Active</h5>
+  <div class="table-responsive">
+    <table class="table table-hover roster draft-table">
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th class="left-data">Player</th>
+          <th>Team</th>
+          <th class="center-data">Pos</th>
+          <th class="center-data">Height</th>
+          <th class="center-data">Weight</th>
+          <th class="center-data">Age</th>
+          <th class="center-data">Years Exp</th>
+          <th class="left-data">College</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <% teamData[5].players.forEach(function(playerData){ %>
+          <td><%= players[playerData].number %></td>
+          <td class="left-data"><%= players[playerData].full_name %></td>
+          <td class="nfl-logo-pad">
+            <img
+              src="/images/nfl/<%= players[playerData].team %>.png"
+              alt="<%= players[playerData].team %>"
+              class="nfl-logo"
+            />
+          </td>
+          <td class="center-data"><%= players[playerData].fantasy_positions %></td>
+          <td class="center-data"><%= players[playerData].height %></td>
+          <td class="center-data"><%= players[playerData].weight %></td>
+          <td class="center-data"><%= players[playerData].age %></td>
+          <td class="center-data"><%= players[playerData].years_exp %></td>
+          <td class="left-data"><%= players[playerData].college %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
   </div>
+</div>
 
 <!-- Awards -->
 

@@ -7,6 +7,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
+const fetch = require("node-fetch");
 const app = express();
 
 app.set("view engine", "ejs");
@@ -26,6 +27,16 @@ const players = require("./public/data/players.json");
 const sleeperTeams =
   "https://api.sleeper.app/v1/league/570110971838902272/rosters";
 
+var teamData;
+
+// =====================================
+// Data from APIs
+// =====================================
+
+fetch(sleeperTeams)
+  .then((response) => response.json())
+  .then((data) => (teamData = data));
+
 // =====================================
 // Routes
 // =====================================
@@ -39,64 +50,99 @@ app.get("/owners", function (req, res) {
 });
 
 app.get("/owners/ethan", function (req, res) {
-  https.get(sleeperTeams, (res) => {
-    let info = "";
-    res.on("data", (chunk) => {
-      info += chunk;
-    });
-    res.on("end", () => {
-      let sleeperData = JSON.parse(info);
-      let playerData = sleeperData[0].players;
-    });
-  });
   res.render("teams/ethan", {
     stats,
     players,
+    teamData,
   });
 });
 
 app.get("/owners/cameron", function (req, res) {
-  res.render("teams/cameron", { stats: stats });
+  res.render("teams/cameron", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/jacob", function (req, res) {
-  res.render("teams/jacob", { stats: stats });
+  res.render("teams/jacob", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/brian", function (req, res) {
-  res.render("teams/brian", { stats: stats });
+  res.render("teams/brian", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/caleb", function (req, res) {
-  res.render("teams/caleb", { stats: stats });
+  res.render("teams/caleb", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/dan", function (req, res) {
-  res.render("teams/dan", { stats: stats });
+  res.render("teams/dan", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/jorden", function (req, res) {
-  res.render("teams/jorden", { stats: stats });
+  res.render("teams/jorden", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/juice", function (req, res) {
-  res.render("teams/juice", { stats: stats });
+  res.render("teams/juice", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/lucas", function (req, res) {
-  res.render("teams/lucas", { stats: stats });
+  res.render("teams/lucas", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/scott", function (req, res) {
-  res.render("teams/scott", { stats: stats });
+  res.render("teams/scott", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/shawn", function (req, res) {
-  res.render("teams/shawn", { stats: stats });
+  res.render("teams/shawn", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/owners/morgan", function (req, res) {
-  res.render("teams/morgan", { stats: stats });
+  res.render("teams/morgan", {
+    stats,
+    players,
+    teamData,
+  });
 });
 
 app.get("/seasons/2020", function (req, res) {

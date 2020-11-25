@@ -644,22 +644,24 @@
         </thead>
         <tbody>
           <tr>
-            <td><%= players['6059'].number %></td>
-            <td class="left-data"><%= players['6059'].full_name %></td>
+            <% teamData[0].players.forEach(function(playerData){ %>
+            <td><%= players[playerData].number %></td>
+            <td class="left-data"><%= players[playerData].full_name %></td>
             <td class="nfl-logo-pad">
               <img
-                src="/images/nfl/<%= players['6059'].team %>.png"
-                alt="<%= players['6059'].team %>"
+                src="/images/nfl/<%= players[playerData].team %>.png"
+                alt="<%= players[playerData].team %>"
                 class="nfl-logo"
               />
             </td>
-            <td class="center-data"><%= players['6059'].fantasy_positions %></td>
-            <td class="center-data"><%= players['6059'].height %></td>
-            <td class="center-data"><%= players['6059'].weight %></td>
-            <td class="center-data"><%= players['6059'].age %></td>
-            <td class="center-data"><%= players['6059'].years_exp %></td>
-            <td class="left-data"><%= players['6059'].college %></td>
+            <td class="center-data"><%= players[playerData].fantasy_positions %></td>
+            <td class="center-data"><%= players[playerData].height %></td>
+            <td class="center-data"><%= players[playerData].weight %></td>
+            <td class="center-data"><%= players[playerData].age %></td>
+            <td class="center-data"><%= players[playerData].years_exp %></td>
+            <td class="left-data"><%= players[playerData].college %></td>
           </tr>
+          <% }); %>
         </tbody>
       </table>
     </div>
