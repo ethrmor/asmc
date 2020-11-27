@@ -6,7 +6,6 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const https = require("https");
 const fetch = require("node-fetch");
 const app = express();
 
@@ -26,7 +25,6 @@ const stats = require("./public/data/stats.json");
 const players = require("./public/data/players.json");
 const sleeperTeams =
   "https://api.sleeper.app/v1/league/570110971838902272/rosters";
-
 var teamData;
 
 // =====================================
@@ -41,15 +39,15 @@ fetch(sleeperTeams)
 // Routes
 // =====================================
 
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.render("landing", { players: players });
 });
 
-app.get("/owners", function (req, res) {
+app.get("/owners", (req, res) => {
   res.render("owners");
 });
 
-app.get("/owners/ethan", function (req, res) {
+app.get("/owners/ethan", (req, res) => {
   res.render("teams/ethan", {
     stats,
     players,
@@ -57,7 +55,7 @@ app.get("/owners/ethan", function (req, res) {
   });
 });
 
-app.get("/owners/cameron", function (req, res) {
+app.get("/owners/cameron", (req, res) => {
   res.render("teams/cameron", {
     stats,
     players,
@@ -65,7 +63,7 @@ app.get("/owners/cameron", function (req, res) {
   });
 });
 
-app.get("/owners/jacob", function (req, res) {
+app.get("/owners/jacob", (req, res) => {
   res.render("teams/jacob", {
     stats,
     players,
@@ -73,7 +71,7 @@ app.get("/owners/jacob", function (req, res) {
   });
 });
 
-app.get("/owners/brian", function (req, res) {
+app.get("/owners/brian", (req, res) => {
   res.render("teams/brian", {
     stats,
     players,
@@ -81,7 +79,7 @@ app.get("/owners/brian", function (req, res) {
   });
 });
 
-app.get("/owners/caleb", function (req, res) {
+app.get("/owners/caleb", (req, res) => {
   res.render("teams/caleb", {
     stats,
     players,
@@ -89,7 +87,7 @@ app.get("/owners/caleb", function (req, res) {
   });
 });
 
-app.get("/owners/dan", function (req, res) {
+app.get("/owners/dan", (req, res) => {
   res.render("teams/dan", {
     stats,
     players,
@@ -97,7 +95,7 @@ app.get("/owners/dan", function (req, res) {
   });
 });
 
-app.get("/owners/jorden", function (req, res) {
+app.get("/owners/jorden", (req, res) => {
   res.render("teams/jorden", {
     stats,
     players,
@@ -105,7 +103,7 @@ app.get("/owners/jorden", function (req, res) {
   });
 });
 
-app.get("/owners/juice", function (req, res) {
+app.get("/owners/juice", (req, res) => {
   res.render("teams/juice", {
     stats,
     players,
@@ -113,7 +111,7 @@ app.get("/owners/juice", function (req, res) {
   });
 });
 
-app.get("/owners/lucas", function (req, res) {
+app.get("/owners/lucas", (req, res) => {
   res.render("teams/lucas", {
     stats,
     players,
@@ -121,7 +119,7 @@ app.get("/owners/lucas", function (req, res) {
   });
 });
 
-app.get("/owners/scott", function (req, res) {
+app.get("/owners/scott", (req, res) => {
   res.render("teams/scott", {
     stats,
     players,
@@ -129,7 +127,7 @@ app.get("/owners/scott", function (req, res) {
   });
 });
 
-app.get("/owners/shawn", function (req, res) {
+app.get("/owners/shawn", (req, res) => {
   res.render("teams/shawn", {
     stats,
     players,
@@ -137,7 +135,7 @@ app.get("/owners/shawn", function (req, res) {
   });
 });
 
-app.get("/owners/morgan", function (req, res) {
+app.get("/owners/morgan", (req, res) => {
   res.render("teams/morgan", {
     stats,
     players,
@@ -145,107 +143,107 @@ app.get("/owners/morgan", function (req, res) {
   });
 });
 
-app.get("/seasons/2020", function (req, res) {
+app.get("/seasons/2020", (req, res) => {
   res.render("seasons/2020", { stats: stats });
 });
 
-app.get("/seasons/all", function (req, res) {
+app.get("/seasons/all", (req, res) => {
   res.render("seasons/all", { stats: stats });
 });
 
-app.get("/stats", function (req, res) {
+app.get("/stats", (req, res) => {
   res.render("stats", { stats: stats });
 });
 
-app.get("/records", function (req, res) {
+app.get("/records", (req, res) => {
   res.render("records");
 });
 
-app.get("/drafts/2021", function (req, res) {
+app.get("/drafts/2021", (req, res) => {
   res.render("drafts/2021");
 });
 
-app.get("/drafts/2022", function (req, res) {
+app.get("/drafts/2022", (req, res) => {
   res.render("drafts/2022");
 });
 
-app.get("/drafts/2023", function (req, res) {
+app.get("/drafts/2023", (req, res) => {
   res.render("drafts/2023");
 });
 
-app.get("/drafts/startup", function (req, res) {
+app.get("/drafts/startup", (req, res) => {
   res.render("drafts/startup");
 });
 
-app.get("/all_asmc", function (req, res) {
+app.get("/all_asmc", (req, res) => {
   res.render("all_asmc/all_asmc");
 });
 
-app.get("/all_asmc/2020", function (req, res) {
+app.get("/all_asmc/2020", (req, res) => {
   res.render("all_asmc/2020");
 });
 
-app.get("/probowl", function (req, res) {
+app.get("/probowl", (req, res) => {
   res.render("probowls/probowl");
 });
 
-app.get("/probowl/2020", function (req, res) {
+app.get("/probowl/2020", (req, res) => {
   res.render("probowls/2020");
 });
 
-app.get("/sportsbook", function (req, res) {
+app.get("/sportsbook", (req, res) => {
   res.render("sportsbook/sportsbook");
 });
 
-app.get("/sportsbook/lines", function (req, res) {
+app.get("/sportsbook/lines", (req, res) => {
   res.render("sportsbook/lines");
 });
 
-app.get("/sportsbook/bets", function (req, res) {
+app.get("/sportsbook/bets", (req, res) => {
   res.render("sportsbook/bets");
 });
 
-app.get("/sportsbook/history", function (req, res) {
+app.get("/sportsbook/history", (req, res) => {
   res.render("sportsbook/history");
 });
 
-app.get("/article", function (req, res) {
+app.get("/article", (req, res) => {
   res.render("article");
 });
 
-app.get("/article2", function (req, res) {
+app.get("/article2", (req, res) => {
   res.render("article2");
 });
 
-app.get("/article3", function (req, res) {
+app.get("/article3", (req, res) => {
   res.render("article3");
 });
 
-app.get("/article4", function (req, res) {
+app.get("/article4", (req, res) => {
   res.render("article4");
 });
 
-app.get("/article5", function (req, res) {
+app.get("/article5", (req, res) => {
   res.render("article5");
 });
 
-app.get("/article6", function (req, res) {
+app.get("/article6", (req, res) => {
   res.render("article6");
 });
 
-app.get("/news", function (req, res) {
+app.get("/news", (req, res) => {
   res.render("news");
 });
 
-app.get("/shop", function (req, res) {
+app.get("/shop", (req, res) => {
   res.render("shop");
 });
 
-app.get("/trades", function (req, res) {
+app.get("/trades", (req, res) => {
   res.render("trades/all");
 });
 
-app.get("/trades/2020", function (req, res) {
+app.get("/trades/2020", (req, res) => {
   res.render("trades/2020");
 });
 
@@ -253,6 +251,6 @@ app.get("/trades/2020", function (req, res) {
 // Tell Express To Listen
 // =====================================
 
-app.listen(process.env.PORT || 3000, function () {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server spinning on port 3000.");
 });
