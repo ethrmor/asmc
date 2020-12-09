@@ -769,4 +769,8 @@ p {
 .grayed-out {
   color: #aaaaaa;
 }
+
+.logo-cell-width {
+  width: 150px;
+}
 /* Team Plates */
