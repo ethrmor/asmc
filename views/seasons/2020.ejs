@@ -322,321 +322,256 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[1].total.oGP %></td>
+            <td class="center-data"><%= stats[1].total.oW %></td>
+            <td class="center-data"><%= stats[1].total.oL %></td>
+            <td class="center-data"><%= stats[1].total.oT %></td>
+            <td class="right-data"><%= stats[1].total.oPct %></td>
+            <td><%= stats[1].total.rFin %></td>
+            <td><%= stats[1].total.txn %></td>
+            <td><%= stats[1].total.trd %></td>
+            <td class="right-data"><%= stats[1].total.oPF %></td>
+            <td class="right-data"><%= stats[1].total.oPA %></td>
+            <td class="right-data"><%= stats[1].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[6].total.oGP %></td>
+            <td class="center-data"><%= stats[6].total.oW %></td>
+            <td class="center-data"><%= stats[6].total.oL %></td>
+            <td class="center-data"><%= stats[6].total.oT %></td>
+            <td class="right-data"><%= stats[6].total.oPct %></td>
+            <td><%= stats[6].total.rFin %></td>
+            <td><%= stats[6].total.txn %></td>
+            <td><%= stats[6].total.trd %></td>
+            <td class="right-data"><%= stats[6].total.oPF %></td>
+            <td class="right-data"><%= stats[6].total.oPA %></td>
+            <td class="right-data"><%= stats[6].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Cameron</td>
-            <td class="left-align">White Panthers</td>
+            <td class="left-align"><%= stats[7].name %></td>
+            <td class="left-align"><%= stats[7].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[7].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[7].conference %>.png" alt="<%= stats[7].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[7].total.oGP %></td>
+            <td class="center-data"><%= stats[7].total.oW %></td>
+            <td class="center-data"><%= stats[7].total.oL %></td>
+            <td class="center-data"><%= stats[7].total.oT %></td>
+            <td class="right-data"><%= stats[7].total.oPct %></td>
+            <td><%= stats[7].total.rFin %></td>
+            <td><%= stats[7].total.txn %></td>
+            <td><%= stats[7].total.trd %></td>
+            <td class="right-data"><%= stats[7].total.oPF %></td>
+            <td class="right-data"><%= stats[7].total.oPA %></td>
+            <td class="right-data"><%= stats[7].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Dan</td>
-            <td class="left-align">Baba Yagas</td>
+            <td class="left-align"><%= stats[5].name %></td>
+            <td class="left-align"><%= stats[5].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[5].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[5].conference %>.png" alt="<%= stats[5].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[5].total.oGP %></td>
+            <td class="center-data"><%= stats[5].total.oW %></td>
+            <td class="center-data"><%= stats[5].total.oL %></td>
+            <td class="center-data"><%= stats[5].total.oT %></td>
+            <td class="right-data"><%= stats[5].total.oPct %></td>
+            <td><%= stats[5].total.rFin %></td>
+            <td><%= stats[5].total.txn %></td>
+            <td><%= stats[5].total.trd %></td>
+            <td class="right-data"><%= stats[5].total.oPF %></td>
+            <td class="right-data"><%= stats[5].total.oPA %></td>
+            <td class="right-data"><%= stats[5].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Ethan</td>
-            <td class="left-align">Silverbacks</td>
+            <td class="left-align"><%= stats[11].name %></td>
+            <td class="left-align"><%= stats[11].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[11].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[11].conference %>.png" alt="<%= stats[11].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[11].total.oGP %></td>
+            <td class="center-data"><%= stats[11].total.oW %></td>
+            <td class="center-data"><%= stats[11].total.oL %></td>
+            <td class="center-data"><%= stats[11].total.oT %></td>
+            <td class="right-data"><%= stats[11].total.oPct %></td>
+            <td><%= stats[11].total.rFin %></td>
+            <td><%= stats[11].total.txn %></td>
+            <td><%= stats[11].total.trd %></td>
+            <td class="right-data"><%= stats[11].total.oPF %></td>
+            <td class="right-data"><%= stats[11].total.oPA %></td>
+            <td class="right-data"><%= stats[11].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Jacob</td>
-            <td class="left-align">Slayton Slayerz</td>
+            <td class="left-align"><%= stats[2].name %></td>
+            <td class="left-align"><%= stats[2].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[2].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[2].conference %>.png" alt="<%= stats[2].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[2].total.oGP %></td>
+            <td class="center-data"><%= stats[2].total.oW %></td>
+            <td class="center-data"><%= stats[2].total.oL %></td>
+            <td class="center-data"><%= stats[2].total.oT %></td>
+            <td class="right-data"><%= stats[2].total.oPct %></td>
+            <td><%= stats[2].total.rFin %></td>
+            <td><%= stats[2].total.txn %></td>
+            <td><%= stats[2].total.trd %></td>
+            <td class="right-data"><%= stats[2].total.oPF %></td>
+            <td class="right-data"><%= stats[2].total.oPA %></td>
+            <td class="right-data"><%= stats[2].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Jorden</td>
-            <td class="left-align">Goathouse Alums</td>
+            <td class="left-align"><%= stats[9].name %></td>
+            <td class="left-align"><%= stats[9].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jorden/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[9].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[9].conference %>.png" alt="<%= stats[9].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[9].total.oGP %></td>
+            <td class="center-data"><%= stats[9].total.oW %></td>
+            <td class="center-data"><%= stats[9].total.oL %></td>
+            <td class="center-data"><%= stats[9].total.oT %></td>
+            <td class="right-data"><%= stats[9].total.oPct %></td>
+            <td><%= stats[9].total.rFin %></td>
+            <td><%= stats[9].total.txn %></td>
+            <td><%= stats[9].total.trd %></td>
+            <td class="right-data"><%= stats[9].total.oPF %></td>
+            <td class="right-data"><%= stats[9].total.oPA %></td>
+            <td class="right-data"><%= stats[9].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Juice</td>
-            <td class="left-align">Macdaddys</td>
+            <td class="left-align"><%= stats[0].name %></td>
+            <td class="left-align"><%= stats[0].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/juice/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[0].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[0].conference %>.png" alt="<%= stats[0].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[0].total.oGP %></td>
+            <td class="center-data"><%= stats[0].total.oW %></td>
+            <td class="center-data"><%= stats[0].total.oL %></td>
+            <td class="center-data"><%= stats[0].total.oT %></td>
+            <td class="right-data"><%= stats[0].total.oPct %></td>
+            <td><%= stats[0].total.rFin %></td>
+            <td><%= stats[0].total.txn %></td>
+            <td><%= stats[0].total.trd %></td>
+            <td class="right-data"><%= stats[0].total.oPF %></td>
+            <td class="right-data"><%= stats[0].total.oPA %></td>
+            <td class="right-data"><%= stats[0].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Lucas</td>
-            <td class="left-align" style="white-space: nowrap;">Herbert St Hermits</td>
+            <td class="left-align"><%= stats[4].name %></td>
+            <td class="left-align"><%= stats[4].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/lucas/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[4].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[4].conference %>.png" alt="<%= stats[4].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[4].total.oGP %></td>
+            <td class="center-data"><%= stats[4].total.oW %></td>
+            <td class="center-data"><%= stats[4].total.oL %></td>
+            <td class="center-data"><%= stats[4].total.oT %></td>
+            <td class="right-data"><%= stats[4].total.oPct %></td>
+            <td><%= stats[4].total.rFin %></td>
+            <td><%= stats[4].total.txn %></td>
+            <td><%= stats[4].total.trd %></td>
+            <td class="right-data"><%= stats[4].total.oPF %></td>
+            <td class="right-data"><%= stats[4].total.oPA %></td>
+            <td class="right-data"><%= stats[4].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Morgan</td>
-            <td class="left-align">Direwolves</td>
+            <td class="left-align"><%= stats[10].name %></td>
+            <td class="left-align"><%= stats[10].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/morgan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[10].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[10].conference %>.png" alt="<%= stats[10].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[10].total.oGP %></td>
+            <td class="center-data"><%= stats[10].total.oW %></td>
+            <td class="center-data"><%= stats[10].total.oL %></td>
+            <td class="center-data"><%= stats[10].total.oT %></td>
+            <td class="right-data"><%= stats[10].total.oPct %></td>
+            <td><%= stats[10].total.rFin %></td>
+            <td><%= stats[10].total.txn %></td>
+            <td><%= stats[10].total.trd %></td>
+            <td class="right-data"><%= stats[10].total.oPF %></td>
+            <td class="right-data"><%= stats[10].total.oPA %></td>
+            <td class="right-data"><%= stats[10].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Scott</td>
-            <td class="left-align">Outkasts</td>
+            <td class="left-align"><%= stats[8].name %></td>
+            <td class="left-align"><%= stats[8].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/scott/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[8].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[8].conference %>.png" alt="<%= stats[8].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[8].total.oGP %></td>
+            <td class="center-data"><%= stats[8].total.oW %></td>
+            <td class="center-data"><%= stats[8].total.oL %></td>
+            <td class="center-data"><%= stats[8].total.oT %></td>
+            <td class="right-data"><%= stats[8].total.oPct %></td>
+            <td><%= stats[8].total.rFin %></td>
+            <td><%= stats[8].total.txn %></td>
+            <td><%= stats[8].total.trd %></td>
+            <td class="right-data"><%= stats[8].total.oPF %></td>
+            <td class="right-data"><%= stats[8].total.oPA %></td>
+            <td class="right-data"><%= stats[8].total.oPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Shawn</td>
-            <td class="left-align">45ers</td>
+            <td class="left-align"><%= stats[3].name %></td>
+            <td class="left-align"><%= stats[3].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/shawn/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[3].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[3].conference %>.png" alt="<%= stats[3].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td>Average</td>
-            <td class="left-align"></td>
-            <td></td>
-            <td></td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td class="right-data">.000</td>
-            <td>0</td>
-            <td>00</td>
-            <td>0</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">0,000.00</td>
-            <td class="right-data">000.00</td>
+            <td class="center-data"><%= stats[3].total.oGP %></td>
+            <td class="center-data"><%= stats[3].total.oW %></td>
+            <td class="center-data"><%= stats[3].total.oL %></td>
+            <td class="center-data"><%= stats[3].total.oT %></td>
+            <td class="right-data"><%= stats[3].total.oPct %></td>
+            <td><%= stats[3].total.rFin %></td>
+            <td><%= stats[3].total.txn %></td>
+            <td><%= stats[3].total.trd %></td>
+            <td class="right-data"><%= stats[3].total.oPF %></td>
+            <td class="right-data"><%= stats[3].total.oPA %></td>
+            <td class="right-data"><%= stats[3].total.oPS %></td>
           </tr>
         </tbody>
       </table>
@@ -668,295 +603,232 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[1].total.apr %></td>
+            <td class="center-data"><%= stats[1].total.aprp %></td>
+            <td class="center-data"><%= stats[1].total.leg %></td>
+            <td class="center-data"><%= stats[1].total.xW %></td>
+            <td class="center-data"><%= stats[1].total.xL %></td>
+            <td class="center-data"><%= stats[1].total.xPct %></td>
+            <td class="center-data"><%= stats[1].total.mpf %></td>
+            <td class="center-data"><%= stats[1].total.mpd %></td>
+            <td class="center-data"><%= stats[1].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[6].total.apr %></td>
+            <td class="center-data"><%= stats[6].total.aprp %></td>
+            <td class="center-data"><%= stats[6].total.leg %></td>
+            <td class="center-data"><%= stats[6].total.xW %></td>
+            <td class="center-data"><%= stats[6].total.xL %></td>
+            <td class="center-data"><%= stats[6].total.xPct %></td>
+            <td class="center-data"><%= stats[6].total.mpf %></td>
+            <td class="center-data"><%= stats[6].total.mpd %></td>
+            <td class="center-data"><%= stats[6].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Cameron</td>
-            <td class="left-align">White Panthers</td>
+            <td class="left-align"><%= stats[7].name %></td>
+            <td class="left-align"><%= stats[7].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[7].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[7].conference %>.png" alt="<%= stats[7].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[7].total.apr %></td>
+            <td class="center-data"><%= stats[7].total.aprp %></td>
+            <td class="center-data"><%= stats[7].total.leg %></td>
+            <td class="center-data"><%= stats[7].total.xW %></td>
+            <td class="center-data"><%= stats[7].total.xL %></td>
+            <td class="center-data"><%= stats[7].total.xPct %></td>
+            <td class="center-data"><%= stats[7].total.mpf %></td>
+            <td class="center-data"><%= stats[7].total.mpd %></td>
+            <td class="center-data"><%= stats[7].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Dan</td>
-            <td class="left-align">Baba Yagas</td>
+            <td class="left-align"><%= stats[5].name %></td>
+            <td class="left-align"><%= stats[5].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[5].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[5].conference %>.png" alt="<%= stats[5].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[5].total.apr %></td>
+            <td class="center-data"><%= stats[5].total.aprp %></td>
+            <td class="center-data"><%= stats[5].total.leg %></td>
+            <td class="center-data"><%= stats[5].total.xW %></td>
+            <td class="center-data"><%= stats[5].total.xL %></td>
+            <td class="center-data"><%= stats[5].total.xPct %></td>
+            <td class="center-data"><%= stats[5].total.mpf %></td>
+            <td class="center-data"><%= stats[5].total.mpd %></td>
+            <td class="center-data"><%= stats[5].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Ethan</td>
-            <td class="left-align">Silverbacks</td>
+            <td class="left-align"><%= stats[11].name %></td>
+            <td class="left-align"><%= stats[11].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[11].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[11].conference %>.png" alt="<%= stats[11].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[11].total.apr %></td>
+            <td class="center-data"><%= stats[11].total.aprp %></td>
+            <td class="center-data"><%= stats[11].total.leg %></td>
+            <td class="center-data"><%= stats[11].total.xW %></td>
+            <td class="center-data"><%= stats[11].total.xL %></td>
+            <td class="center-data"><%= stats[11].total.xPct %></td>
+            <td class="center-data"><%= stats[11].total.mpf %></td>
+            <td class="center-data"><%= stats[11].total.mpd %></td>
+            <td class="center-data"><%= stats[11].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Jacob</td>
-            <td class="left-align">Slayton Slayerz</td>
+            <td class="left-align"><%= stats[2].name %></td>
+            <td class="left-align"><%= stats[2].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[2].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[2].conference %>.png" alt="<%= stats[2].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[2].total.apr %></td>
+            <td class="center-data"><%= stats[2].total.aprp %></td>
+            <td class="center-data"><%= stats[2].total.leg %></td>
+            <td class="center-data"><%= stats[2].total.xW %></td>
+            <td class="center-data"><%= stats[2].total.xL %></td>
+            <td class="center-data"><%= stats[2].total.xPct %></td>
+            <td class="center-data"><%= stats[2].total.mpf %></td>
+            <td class="center-data"><%= stats[2].total.mpd %></td>
+            <td class="center-data"><%= stats[2].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Jorden</td>
-            <td class="left-align">Goathouse Alums</td>
+            <td class="left-align"><%= stats[9].name %></td>
+            <td class="left-align"><%= stats[9].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jorden/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[9].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[9].conference %>.png" alt="<%= stats[9].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[9].total.apr %></td>
+            <td class="center-data"><%= stats[9].total.aprp %></td>
+            <td class="center-data"><%= stats[9].total.leg %></td>
+            <td class="center-data"><%= stats[9].total.xW %></td>
+            <td class="center-data"><%= stats[9].total.xL %></td>
+            <td class="center-data"><%= stats[9].total.xPct %></td>
+            <td class="center-data"><%= stats[9].total.mpf %></td>
+            <td class="center-data"><%= stats[9].total.mpd %></td>
+            <td class="center-data"><%= stats[9].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Juice</td>
-            <td class="left-align">Macdaddys</td>
+            <td class="left-align"><%= stats[0].name %></td>
+            <td class="left-align"><%= stats[0].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/juice/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[0].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[0].conference %>.png" alt="<%= stats[0].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[0].total.apr %></td>
+            <td class="center-data"><%= stats[0].total.aprp %></td>
+            <td class="center-data"><%= stats[0].total.leg %></td>
+            <td class="center-data"><%= stats[0].total.xW %></td>
+            <td class="center-data"><%= stats[0].total.xL %></td>
+            <td class="center-data"><%= stats[0].total.xPct %></td>
+            <td class="center-data"><%= stats[0].total.mpf %></td>
+            <td class="center-data"><%= stats[0].total.mpd %></td>
+            <td class="center-data"><%= stats[0].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Lucas</td>
-            <td class="left-align" style="white-space: nowrap;">Herbert St Hermits</td>
+            <td class="left-align"><%= stats[4].name %></td>
+            <td class="left-align"><%= stats[4].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/lucas/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[4].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[4].conference %>.png" alt="<%= stats[4].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[4].total.apr %></td>
+            <td class="center-data"><%= stats[4].total.aprp %></td>
+            <td class="center-data"><%= stats[4].total.leg %></td>
+            <td class="center-data"><%= stats[4].total.xW %></td>
+            <td class="center-data"><%= stats[4].total.xL %></td>
+            <td class="center-data"><%= stats[4].total.xPct %></td>
+            <td class="center-data"><%= stats[4].total.mpf %></td>
+            <td class="center-data"><%= stats[4].total.mpd %></td>
+            <td class="center-data"><%= stats[4].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Morgan</td>
-            <td class="left-align">Direwolves</td>
+            <td class="left-align"><%= stats[10].name %></td>
+            <td class="left-align"><%= stats[10].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/morgan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[10].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[10].conference %>.png" alt="<%= stats[10].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[10].total.apr %></td>
+            <td class="center-data"><%= stats[10].total.aprp %></td>
+            <td class="center-data"><%= stats[10].total.leg %></td>
+            <td class="center-data"><%= stats[10].total.xW %></td>
+            <td class="center-data"><%= stats[10].total.xL %></td>
+            <td class="center-data"><%= stats[10].total.xPct %></td>
+            <td class="center-data"><%= stats[10].total.mpf %></td>
+            <td class="center-data"><%= stats[10].total.mpd %></td>
+            <td class="center-data"><%= stats[10].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Scott</td>
-            <td class="left-align">Outkasts</td>
+            <td class="left-align"><%= stats[8].name %></td>
+            <td class="left-align"><%= stats[8].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/scott/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[8].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[8].conference %>.png" alt="<%= stats[8].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[8].total.apr %></td>
+            <td class="center-data"><%= stats[8].total.aprp %></td>
+            <td class="center-data"><%= stats[8].total.leg %></td>
+            <td class="center-data"><%= stats[8].total.xW %></td>
+            <td class="center-data"><%= stats[8].total.xL %></td>
+            <td class="center-data"><%= stats[8].total.xPct %></td>
+            <td class="center-data"><%= stats[8].total.mpf %></td>
+            <td class="center-data"><%= stats[8].total.mpd %></td>
+            <td class="center-data"><%= stats[8].total.mpdg %></td>
           </tr>
           <tr>
-            <td class="left-align">Shawn</td>
-            <td class="left-align">45ers</td>
+            <td class="left-align"><%= stats[3].name %></td>
+            <td class="left-align"><%= stats[3].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/shawn/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[3].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[3].conference %>.png" alt="<%= stats[3].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td>Average</td>
-            <td class="left-align"></td>
-            <td></td>
-            <td></td>
-            <td class="right-data">000.00</td>
-            <td>100</td>
-            <td>100</td>
-            <td>00</td>
-            <td>00</td>
-            <td class="right-data">.000</td>
-            <td>0,000.00</td>
-            <td>-000.00</td>
-            <td>-00.00</td>
+            <td class="center-data"><%= stats[3].total.apr %></td>
+            <td class="center-data"><%= stats[3].total.aprp %></td>
+            <td class="center-data"><%= stats[3].total.leg %></td>
+            <td class="center-data"><%= stats[3].total.xW %></td>
+            <td class="center-data"><%= stats[3].total.xL %></td>
+            <td class="center-data"><%= stats[3].total.xPct %></td>
+            <td class="center-data"><%= stats[3].total.mpf %></td>
+            <td class="center-data"><%= stats[3].total.mpd %></td>
+            <td class="center-data"><%= stats[3].total.mpdg %></td>
           </tr>
         </tbody>
       </table>
@@ -987,147 +859,112 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[1].total.pBye %></td>
+            <td class="center-data"><%= stats[1].total.pGP %></td>
+            <td class="center-data"><%= stats[1].total.pW %></td>
+            <td class="center-data"><%= stats[1].total.pL %></td>
+            <td class="right-data"><%= stats[1].total.pPct %></td>
+            <td class="right-data"><%= stats[1].total.pPF %></td>
+            <td class="right-data"><%= stats[1].total.pPA %></td>
+            <td class="right-data"><%= stats[1].total.pPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[6].total.pBye %></td>
+            <td class="center-data"><%= stats[6].total.pGP %></td>
+            <td class="center-data"><%= stats[6].total.pW %></td>
+            <td class="center-data"><%= stats[6].total.pL %></td>
+            <td class="right-data"><%= stats[6].total.pPct %></td>
+            <td class="right-data"><%= stats[6].total.pPF %></td>
+            <td class="right-data"><%= stats[6].total.pPA %></td>
+            <td class="right-data"><%= stats[6].total.pPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Cameron</td>
-            <td class="left-align">White Panthers</td>
+            <td class="left-align"><%= stats[7].name %></td>
+            <td class="left-align"><%= stats[7].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[7].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[7].conference %>.png" alt="<%= stats[7].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[7].total.pBye %></td>
+            <td class="center-data"><%= stats[7].total.pGP %></td>
+            <td class="center-data"><%= stats[7].total.pW %></td>
+            <td class="center-data"><%= stats[7].total.pL %></td>
+            <td class="right-data"><%= stats[7].total.pPct %></td>
+            <td class="right-data"><%= stats[7].total.pPF %></td>
+            <td class="right-data"><%= stats[7].total.pPA %></td>
+            <td class="right-data"><%= stats[7].total.pPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Dan</td>
-            <td class="left-align">Baba Yagas</td>
+            <td class="left-align"><%= stats[5].name %></td>
+            <td class="left-align"><%= stats[5].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[5].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[5].conference %>.png" alt="<%= stats[5].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[5].total.pBye %></td>
+            <td class="center-data"><%= stats[5].total.pGP %></td>
+            <td class="center-data"><%= stats[5].total.pW %></td>
+            <td class="center-data"><%= stats[5].total.pL %></td>
+            <td class="right-data"><%= stats[5].total.pPct %></td>
+            <td class="right-data"><%= stats[5].total.pPF %></td>
+            <td class="right-data"><%= stats[5].total.pPA %></td>
+            <td class="right-data"><%= stats[5].total.pPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Ethan</td>
-            <td class="left-align">Silverbacks</td>
+            <td class="left-align"><%= stats[11].name %></td>
+            <td class="left-align"><%= stats[11].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[11].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[11].conference %>.png" alt="<%= stats[11].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[11].total.pBye %></td>
+            <td class="center-data"><%= stats[11].total.pGP %></td>
+            <td class="center-data"><%= stats[11].total.pW %></td>
+            <td class="center-data"><%= stats[11].total.pL %></td>
+            <td class="right-data"><%= stats[11].total.pPct %></td>
+            <td class="right-data"><%= stats[11].total.pPF %></td>
+            <td class="right-data"><%= stats[11].total.pPA %></td>
+            <td class="right-data"><%= stats[11].total.pPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Jacob</td>
-            <td class="left-align">Slayton Slayerz</td>
+            <td class="left-align"><%= stats[2].name %></td>
+            <td class="left-align"><%= stats[2].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[2].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[2].conference %>.png" alt="<%= stats[2].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td colspan="4" class="left-align">Average</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[2].total.pBye %></td>
+            <td class="center-data"><%= stats[2].total.pGP %></td>
+            <td class="center-data"><%= stats[2].total.pW %></td>
+            <td class="center-data"><%= stats[2].total.pL %></td>
+            <td class="right-data"><%= stats[2].total.pPct %></td>
+            <td class="right-data"><%= stats[2].total.pPF %></td>
+            <td class="right-data"><%= stats[2].total.pPA %></td>
+            <td class="right-data"><%= stats[2].total.pPS %></td>
           </tr>
         </tbody>
       </table>
@@ -1157,56 +994,38 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>0.00</td>
+            <td class="center-data"><%= stats[1].total.cGP %></td>
+            <td class="center-data"><%= stats[1].total.cW %></td>
+            <td class="center-data"><%= stats[1].total.cL %></td>
+            <td class="right-data"><%= stats[1].total.cPct %></td>
+            <td class="right-data"><%= stats[1].total.cPF %></td>
+            <td class="right-data"><%= stats[1].total.cPA %></td>
+            <td class="right-data"><%= stats[1].total.cPS %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>0.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td colspan="4" class="left-align">Average</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>.000</td>
-            <td>000.00</td>
-            <td>000.00</td>
-            <td>00.00</td>
+            <td class="center-data"><%= stats[6].total.cGP %></td>
+            <td class="center-data"><%= stats[6].total.cW %></td>
+            <td class="center-data"><%= stats[6].total.cL %></td>
+            <td class="right-data"><%= stats[6].total.cPct %></td>
+            <td class="right-data"><%= stats[6].total.cPF %></td>
+            <td class="right-data"><%= stats[6].total.cPA %></td>
+            <td class="right-data"><%= stats[6].total.cPS %></td>
           </tr>
         </tbody>
       </table>
@@ -1244,247 +1063,232 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[1].total.spg %></td>
+            <td class="right-data"><%= stats[1].total.spa %></td>
+            <td class="right-data"><%= stats[1].total.sps %></td>
+            <td class="right-data"><%= stats[1].total.ppg %></td>
+            <td class="right-data"><%= stats[1].total.ppa %></td>
+            <td class="right-data"><%= stats[1].total.pps %></td>
+            <td class="right-data"><%= stats[1].total.cpg %></td>
+            <td class="right-data"><%= stats[1].total.cpa %></td>
+            <td class="right-data"><%= stats[1].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[6].total.spg %></td>
+            <td class="right-data"><%= stats[6].total.spa %></td>
+            <td class="right-data"><%= stats[6].total.sps %></td>
+            <td class="right-data"><%= stats[6].total.ppg %></td>
+            <td class="right-data"><%= stats[6].total.ppa %></td>
+            <td class="right-data"><%= stats[6].total.pps %></td>
+            <td class="right-data"><%= stats[6].total.cpg %></td>
+            <td class="right-data"><%= stats[6].total.cpa %></td>
+            <td class="right-data"><%= stats[6].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Cameron</td>
-            <td class="left-align">White Panthers</td>
+            <td class="left-align"><%= stats[7].name %></td>
+            <td class="left-align"><%= stats[7].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[7].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[7].conference %>.png" alt="<%= stats[7].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="average-stats" rowspan="10" colspan="3"></td>
+            <td class="right-data"><%= stats[7].total.spg %></td>
+            <td class="right-data"><%= stats[7].total.spa %></td>
+            <td class="right-data"><%= stats[7].total.sps %></td>
+            <td class="right-data"><%= stats[7].total.ppg %></td>
+            <td class="right-data"><%= stats[7].total.ppa %></td>
+            <td class="right-data"><%= stats[7].total.pps %></td>
+            <td class="right-data"><%= stats[7].total.cpg %></td>
+            <td class="right-data"><%= stats[7].total.cpa %></td>
+            <td class="right-data"><%= stats[7].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Dan</td>
-            <td class="left-align">Baba Yagas</td>
+            <td class="left-align"><%= stats[5].name %></td>
+            <td class="left-align"><%= stats[5].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[5].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[5].conference %>.png" alt="<%= stats[5].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[5].total.spg %></td>
+            <td class="right-data"><%= stats[5].total.spa %></td>
+            <td class="right-data"><%= stats[5].total.sps %></td>
+            <td class="right-data"><%= stats[5].total.ppg %></td>
+            <td class="right-data"><%= stats[5].total.ppa %></td>
+            <td class="right-data"><%= stats[5].total.pps %></td>
+            <td class="right-data"><%= stats[5].total.cpg %></td>
+            <td class="right-data"><%= stats[5].total.cpa %></td>
+            <td class="right-data"><%= stats[5].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Ethan</td>
-            <td class="left-align">Silverbacks</td>
+            <td class="left-align"><%= stats[11].name %></td>
+            <td class="left-align"><%= stats[11].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[11].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[11].conference %>.png" alt="<%= stats[11].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[11].total.spg %></td>
+            <td class="right-data"><%= stats[11].total.spa %></td>
+            <td class="right-data"><%= stats[11].total.sps %></td>
+            <td class="right-data"><%= stats[11].total.ppg %></td>
+            <td class="right-data"><%= stats[11].total.ppa %></td>
+            <td class="right-data"><%= stats[11].total.pps %></td>
+            <td class="right-data"><%= stats[11].total.cpg %></td>
+            <td class="right-data"><%= stats[11].total.cpa %></td>
+            <td class="right-data"><%= stats[11].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Jacob</td>
-            <td class="left-align">Slayton Slayerz</td>
+            <td class="left-align"><%= stats[2].name %></td>
+            <td class="left-align"><%= stats[2].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[2].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[2].conference %>.png" alt="<%= stats[2].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[2].total.spg %></td>
+            <td class="right-data"><%= stats[2].total.spa %></td>
+            <td class="right-data"><%= stats[2].total.sps %></td>
+            <td class="right-data"><%= stats[2].total.ppg %></td>
+            <td class="right-data"><%= stats[2].total.ppa %></td>
+            <td class="right-data"><%= stats[2].total.pps %></td>
+            <td class="right-data"><%= stats[2].total.cpg %></td>
+            <td class="right-data"><%= stats[2].total.cpa %></td>
+            <td class="right-data"><%= stats[2].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Jorden</td>
-            <td class="left-align">Goathouse Alums</td>
+            <td class="left-align"><%= stats[9].name %></td>
+            <td class="left-align"><%= stats[9].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jorden/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[9].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[9].conference %>.png" alt="<%= stats[9].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="average-stats" rowspan="6" colspan="3"></td>
+            <td class="right-data"><%= stats[9].total.spg %></td>
+            <td class="right-data"><%= stats[9].total.spa %></td>
+            <td class="right-data"><%= stats[9].total.sps %></td>
+            <td class="right-data"><%= stats[9].total.ppg %></td>
+            <td class="right-data"><%= stats[9].total.ppa %></td>
+            <td class="right-data"><%= stats[9].total.pps %></td>
+            <td class="right-data"><%= stats[9].total.cpg %></td>
+            <td class="right-data"><%= stats[9].total.cpa %></td>
+            <td class="right-data"><%= stats[9].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Juice</td>
-            <td class="left-align">Macdaddys</td>
+            <td class="left-align"><%= stats[0].name %></td>
+            <td class="left-align"><%= stats[0].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/juice/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[0].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[0].conference %>.png" alt="<%= stats[0].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[0].total.spg %></td>
+            <td class="right-data"><%= stats[0].total.spa %></td>
+            <td class="right-data"><%= stats[0].total.sps %></td>
+            <td class="right-data"><%= stats[0].total.ppg %></td>
+            <td class="right-data"><%= stats[0].total.ppa %></td>
+            <td class="right-data"><%= stats[0].total.pps %></td>
+            <td class="right-data"><%= stats[0].total.cpg %></td>
+            <td class="right-data"><%= stats[0].total.cpa %></td>
+            <td class="right-data"><%= stats[0].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Lucas</td>
-            <td class="left-align" style="white-space: nowrap;">Herbert St Hermits</td>
+            <td class="left-align"><%= stats[4].name %></td>
+            <td class="left-align"><%= stats[4].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/lucas/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[4].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[4].conference %>.png" alt="<%= stats[4].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[4].total.spg %></td>
+            <td class="right-data"><%= stats[4].total.spa %></td>
+            <td class="right-data"><%= stats[4].total.sps %></td>
+            <td class="right-data"><%= stats[4].total.ppg %></td>
+            <td class="right-data"><%= stats[4].total.ppa %></td>
+            <td class="right-data"><%= stats[4].total.pps %></td>
+            <td class="right-data"><%= stats[4].total.cpg %></td>
+            <td class="right-data"><%= stats[4].total.cpa %></td>
+            <td class="right-data"><%= stats[4].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Morgan</td>
-            <td class="left-align">Direwolves</td>
+            <td class="left-align"><%= stats[10].name %></td>
+            <td class="left-align"><%= stats[10].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/morgan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[10].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[10].conference %>.png" alt="<%= stats[10].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[10].total.spg %></td>
+            <td class="right-data"><%= stats[10].total.spa %></td>
+            <td class="right-data"><%= stats[10].total.sps %></td>
+            <td class="right-data"><%= stats[10].total.ppg %></td>
+            <td class="right-data"><%= stats[10].total.ppa %></td>
+            <td class="right-data"><%= stats[10].total.pps %></td>
+            <td class="right-data"><%= stats[10].total.cpg %></td>
+            <td class="right-data"><%= stats[10].total.cpa %></td>
+            <td class="right-data"><%= stats[10].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Scott</td>
-            <td class="left-align">Outkasts</td>
+            <td class="left-align"><%= stats[8].name %></td>
+            <td class="left-align"><%= stats[8].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/scott/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[8].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[8].conference %>.png" alt="<%= stats[8].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[8].total.spg %></td>
+            <td class="right-data"><%= stats[8].total.spa %></td>
+            <td class="right-data"><%= stats[8].total.sps %></td>
+            <td class="right-data"><%= stats[8].total.ppg %></td>
+            <td class="right-data"><%= stats[8].total.ppa %></td>
+            <td class="right-data"><%= stats[8].total.pps %></td>
+            <td class="right-data"><%= stats[8].total.cpg %></td>
+            <td class="right-data"><%= stats[8].total.cpa %></td>
+            <td class="right-data"><%= stats[8].total.cps %></td>
           </tr>
           <tr>
-            <td class="left-align">Shawn</td>
-            <td class="left-align">45ers</td>
+            <td class="left-align"><%= stats[3].name %></td>
+            <td class="left-align"><%= stats[3].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/shawn/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[3].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[3].conference %>.png" alt="<%= stats[3].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-          </tr>
-          <tr class="career-stats">
-            <td>Average</td>
-            <td colspan="3"></td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">000.00</td>
-            <td class="right-data">00.00</td>
+            <td class="right-data"><%= stats[3].total.spg %></td>
+            <td class="right-data"><%= stats[3].total.spa %></td>
+            <td class="right-data"><%= stats[3].total.sps %></td>
+            <td class="right-data"><%= stats[3].total.ppg %></td>
+            <td class="right-data"><%= stats[3].total.ppa %></td>
+            <td class="right-data"><%= stats[3].total.pps %></td>
+            <td class="right-data"><%= stats[3].total.cpg %></td>
+            <td class="right-data"><%= stats[3].total.cpa %></td>
+            <td class="right-data"><%= stats[3].total.cps %></td>
           </tr>
         </tbody>
       </table>
@@ -1518,254 +1322,196 @@
         </thead>
         <tbody>
           <tr>
-            <td class="left-align">Brian</td>
-            <td class="left-align">Cowboys</td>
+            <td class="left-align"><%= stats[1].name %></td>
+            <td class="left-align"><%= stats[1].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/brian/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[1].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[1].conference %>.png" alt="<%= stats[1].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[1].total.bbAW %></td>
+            <td class="center-data"><%= stats[1].total.bbAL %></td>
+            <td class="right-data"><%= stats[1].total.bbAPct %></td>
+            <td class="center-data"><%= stats[1].total.bbXW %></td>
+            <td class="center-data"><%= stats[1].total.bbXL %></td>
+            <td class="right-data"><%= stats[1].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Caleb</td>
-            <td class="left-align">Leprechauns</td>
+            <td class="left-align"><%= stats[6].name %></td>
+            <td class="left-align"><%= stats[6].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/caleb/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[6].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[6].conference %>.png" alt="<%= stats[6].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[6].total.bbAW %></td>
+            <td class="center-data"><%= stats[6].total.bbAL %></td>
+            <td class="right-data"><%= stats[6].total.bbAPct %></td>
+            <td class="center-data"><%= stats[6].total.bbXW %></td>
+            <td class="center-data"><%= stats[6].total.bbXL %></td>
+            <td class="right-data"><%= stats[6].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Cameron</td>
-            <td class="left-align">White Panthers</td>
+            <td class="left-align"><%= stats[7].name %></td>
+            <td class="left-align"><%= stats[7].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/cameron/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[7].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[7].conference %>.png" alt="<%= stats[7].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[7].total.bbAW %></td>
+            <td class="center-data"><%= stats[7].total.bbAL %></td>
+            <td class="right-data"><%= stats[7].total.bbAPct %></td>
+            <td class="center-data"><%= stats[7].total.bbXW %></td>
+            <td class="center-data"><%= stats[7].total.bbXL %></td>
+            <td class="right-data"><%= stats[7].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Dan</td>
-            <td class="left-align">Baba Yagas</td>
+            <td class="left-align"><%= stats[5].name %></td>
+            <td class="left-align"><%= stats[5].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/dan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[5].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[5].conference %>.png" alt="<%= stats[5].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[5].total.bbAW %></td>
+            <td class="center-data"><%= stats[5].total.bbAL %></td>
+            <td class="right-data"><%= stats[5].total.bbAPct %></td>
+            <td class="center-data"><%= stats[5].total.bbXW %></td>
+            <td class="center-data"><%= stats[5].total.bbXL %></td>
+            <td class="right-data"><%= stats[5].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Ethan</td>
-            <td class="left-align">Silverbacks</td>
+            <td class="left-align"><%= stats[11].name %></td>
+            <td class="left-align"><%= stats[11].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/ethan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[11].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[11].conference %>.png" alt="<%= stats[11].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[11].total.bbAW %></td>
+            <td class="center-data"><%= stats[11].total.bbAL %></td>
+            <td class="right-data"><%= stats[11].total.bbAPct %></td>
+            <td class="center-data"><%= stats[11].total.bbXW %></td>
+            <td class="center-data"><%= stats[11].total.bbXL %></td>
+            <td class="right-data"><%= stats[11].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Jacob</td>
-            <td class="left-align">Slayton Slayerz</td>
+            <td class="left-align"><%= stats[2].name %></td>
+            <td class="left-align"><%= stats[2].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jacob/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[2].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[2].conference %>.png" alt="<%= stats[2].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[2].total.bbAW %></td>
+            <td class="center-data"><%= stats[2].total.bbAL %></td>
+            <td class="right-data"><%= stats[2].total.bbAPct %></td>
+            <td class="center-data"><%= stats[2].total.bbXW %></td>
+            <td class="center-data"><%= stats[2].total.bbXL %></td>
+            <td class="right-data"><%= stats[2].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Jorden</td>
-            <td class="left-align">Goathouse Alums</td>
+            <td class="left-align"><%= stats[9].name %></td>
+            <td class="left-align"><%= stats[9].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/jorden/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[9].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[9].conference %>.png" alt="<%= stats[9].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[9].total.bbAW %></td>
+            <td class="center-data"><%= stats[9].total.bbAL %></td>
+            <td class="right-data"><%= stats[9].total.bbAPct %></td>
+            <td class="center-data"><%= stats[9].total.bbXW %></td>
+            <td class="center-data"><%= stats[9].total.bbXL %></td>
+            <td class="right-data"><%= stats[9].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Juice</td>
-            <td class="left-align">Macdaddys</td>
+            <td class="left-align"><%= stats[0].name %></td>
+            <td class="left-align"><%= stats[0].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/juice/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[0].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[0].conference %>.png" alt="<%= stats[0].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[0].total.bbAW %></td>
+            <td class="center-data"><%= stats[0].total.bbAL %></td>
+            <td class="right-data"><%= stats[0].total.bbAPct %></td>
+            <td class="center-data"><%= stats[0].total.bbXW %></td>
+            <td class="center-data"><%= stats[0].total.bbXL %></td>
+            <td class="right-data"><%= stats[0].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Lucas</td>
-            <td class="left-align">Herbert St Hermits</td>
+            <td class="left-align"><%= stats[4].name %></td>
+            <td class="left-align"><%= stats[4].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/lucas/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[4].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[4].conference %>.png" alt="<%= stats[4].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[4].total.bbAW %></td>
+            <td class="center-data"><%= stats[4].total.bbAL %></td>
+            <td class="right-data"><%= stats[4].total.bbAPct %></td>
+            <td class="center-data"><%= stats[4].total.bbXW %></td>
+            <td class="center-data"><%= stats[4].total.bbXL %></td>
+            <td class="right-data"><%= stats[4].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Morgan</td>
-            <td class="left-align">Direwolves</td>
+            <td class="left-align"><%= stats[10].name %></td>
+            <td class="left-align"><%= stats[10].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/morgan/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[10].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[10].conference %>.png" alt="<%= stats[10].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[10].total.bbAW %></td>
+            <td class="center-data"><%= stats[10].total.bbAL %></td>
+            <td class="right-data"><%= stats[10].total.bbAPct %></td>
+            <td class="center-data"><%= stats[10].total.bbXW %></td>
+            <td class="center-data"><%= stats[10].total.bbXL %></td>
+            <td class="right-data"><%= stats[10].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Scott</td>
-            <td class="left-align">Outkasts</td>
+            <td class="left-align"><%= stats[8].name %></td>
+            <td class="left-align"><%= stats[8].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/scott/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[8].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/western.png"
-                alt="Western Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[8].conference %>.png" alt="<%= stats[8].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[8].total.bbAW %></td>
+            <td class="center-data"><%= stats[8].total.bbAL %></td>
+            <td class="right-data"><%= stats[8].total.bbAPct %></td>
+            <td class="center-data"><%= stats[8].total.bbXW %></td>
+            <td class="center-data"><%= stats[8].total.bbXL %></td>
+            <td class="right-data"><%= stats[8].total.bbXPct %></td>
           </tr>
           <tr>
-            <td class="left-align">Shawn</td>
-            <td class="left-align">45ers</td>
+            <td class="left-align"><%= stats[3].name %></td>
+            <td class="left-align"><%= stats[3].franchise %></td>
             <td class="nfl-logo-pad">
-              <img src="/images/shawn/logo.png" alt="" class="nfl-logo" />
+              <img src="/images/<%= stats[3].lowerName %>/logo.png" alt="" class="nfl-logo" />
             </td>
             <td class="nfl-logo-pad">
-              <img
-                src="/images/eastern.png"
-                alt="Eastern Conference"
-                class="nfl-logo"
-              />
+              <img src="/images/<%= stats[3].conference %>.png" alt="<%= stats[3].conference %> Conference" class="nfl-logo" />
             </td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
-          </tr>
-          <tr class="career-stats">
-            <td>Average</td>
-            <td colspan="3"></td>
-            <td class="">0</td>
-            <td class="">0</td>
-            <td class="right-data">.000</td>
-            <td class="">00</td>
-            <td class="">00</td>
-            <td class="right-data">.000</td>
+            <td class="center-data"><%= stats[3].total.bbAW %></td>
+            <td class="center-data"><%= stats[3].total.bbAL %></td>
+            <td class="right-data"><%= stats[3].total.bbAPct %></td>
+            <td class="center-data"><%= stats[3].total.bbXW %></td>
+            <td class="center-data"><%= stats[3].total.bbXL %></td>
+            <td class="right-data"><%= stats[3].total.bbXPct %></td>
           </tr>
         </tbody>
       </table>
