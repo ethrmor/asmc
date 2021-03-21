@@ -235,6 +235,10 @@ app.get("/2021-asmc-awards", (req, res) => {
   res.render("2021-asmc-awards");
 });
 
+app.get("/article7", (req, res) => {
+  res.render("article7");
+});
+
 app.get("/news", (req, res) => {
   res.render("news");
 });
